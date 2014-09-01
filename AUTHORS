@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+AUTHORS
+-------------------------------------------------------------------------------
+
+Please check the source code files and/or git history and/or ChangeLog for
+a list of all authors and contributors.
+
+The PD tests in the decoder/ subdirectory were initially added to the
+libsigrokdecode repository (and later moved to the sigrok-test repo).
+Check the libsigrokdecode repo for the history before the move.
+

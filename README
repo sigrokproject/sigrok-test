@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+README
+-------------------------------------------------------------------------------
+
+The sigrok project aims at creating a portable, cross-platform,
+Free/Libre/Open-Source signal analysis software suite that supports various
+device types (such as logic analyzers, oscilloscopes, multimeters, and more).
+
+sigrok-test is a collection of various tools and files for testing sigrok.
+
+
+Status
+------
+
+Work in progress.
+
+Distro packagers should NOT package this!
+
+
+Requirements
+------------
+
+ - git
+ - gcc
+ - make
+ - autoconf >= 2.63
+ - automake >= 1.11
+ - pkg-config >= 0.22
+ - libglib >= 2.24.0
+ - Python >= 3.2
+ - libsigrok >= 0.3.0
+ - libsigrokdecode >= 0.3.0
+ - python3-coverage
+
+
+Building and usage
+------------------
+
+Assumption: libsigrok and libsigrokdecode are installed in $HOME/sr.
+If they are in a standard location instead, you don't need the
+PKG_CONFIG_PATH and LD_LIBRARY_PATH below.
+
+In order to get the sigrok-test source code and build it, run:
+
+ $ git clone git://sigrok.org/sigrok-test
+ $ cd sigrok-test
+ $ PKG_CONFIG_PATH=$HOME/sr/lib/pkgconfig ./configure \
+	--with-decodersdir=/path/to/decoders
+ $ make
+
+This will test the decoders located at /path/to/decoders:
+
+ $ LD_LIBRARY_PATH=$HOME/sr/lib ./decoder/test/pdtest -r -v -a
+
+
+Copyright and license
+---------------------
+
+sigrok-test contains various tools that are licensed under different terms.
+
+Some are licensed under the terms of the GNU GPL version 2 (or later),
+others under the terms of the GNU GPL version 3 (or later).
+
+Please see the individual source files for the full list of copyright holders
+and the license that applies to the respective tool.
+
+
+Mailing list
+------------
+
+ https://lists.sourceforge.net/lists/listinfo/sigrok-devel
+
+
+IRC
+---
+
+You can find the sigrok developers in the #sigrok IRC channel on Freenode.
+
+
+Website
+-------
+
+ http://sigrok.org
+

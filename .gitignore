@@ -1,0 +1,30 @@
+# autotools cruft
+aclocal.m4
+autom4te.cache/
+compile
+config.guess
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+missing
+ChangeLog
+INSTALL
+decoder/runtc
+
+# recursive autoconf leftovers
+.deps
+Makefile
+Makefile.in
+.dirstamp
+
+# build leftovers
+*~
+*.o
+*.a
+*.lo
+*.la
+.libs/
+decoder/test/*/__pycache__/
