@@ -383,6 +383,7 @@ def run_tests(tests, fix=False):
                         if re.match(reg, results[-1]['error']):
                             # found it, not an error
                             results[-1].pop('error')
+                            errors -= 1
                     if VERBOSE:
                         if 'diff' in results[-1]:
                             INFO("Output mismatch")
