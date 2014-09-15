@@ -252,14 +252,14 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 		/* This is not the PD selected for output. */
 		return;
 
-	if (op->class_idx != -1 && op->class_idx != pda->ann_format)
+	if (op->class_idx != -1 && op->class_idx != pda->ann_class)
 		/*
 		 * This output takes a specific annotation class,
 		 * but not the one that just came in.
 		 */
 		return;
 
-	dec_ann = g_slist_nth_data(dec->annotations, pda->ann_format);
+	dec_ann = g_slist_nth_data(dec->annotations, pda->ann_class);
 	line = g_string_sized_new(256);
 	g_string_printf(line, "%" PRIu64 "-%" PRIu64 " %s: %s:",
 			pdata->start_sample, pdata->end_sample,
