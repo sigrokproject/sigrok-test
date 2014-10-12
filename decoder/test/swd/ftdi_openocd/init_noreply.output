@@ -1,0 +1,7 @@
+0-201 swd: reset: "LINERESET"
+201-261 swd: enable: "JTAG->SWD"
+265-467 swd: reset: "LINERESET"
+1216-1244 swd: read: "IDCODE"
+1251-1259 swd: ack: "NOREPLY"
+1403-1431 swd: write: "W ABORT"
+1437-1445 swd: ack: "NOREPLY"
