@@ -332,10 +332,12 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 	GVariant *gvar;
 	GHashTable *channels, *opts;
 	GSList *pdl, *l;
-	int idx;
+	int idx, i;
 	int max_channel;
 	char **decoder_class;
 	struct sr_session *sr_sess;
+	gboolean is_number;
+	const char *s;
 
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
@@ -378,7 +380,22 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 				(GDestroyNotify)g_variant_unref);
 		for (l = pd->options; l; l = l->next) {
 			option = l->data;
-			g_hash_table_insert(opts, option->key, option->value);
+
+			is_number = TRUE;
+			s = g_variant_get_string(option->value, NULL);
+			for (i = 0; i < (int)strlen(s); i++) {
+				if (!isdigit(s[i]))
+					is_number = FALSE;
+			}
+
+			if (is_number) {
+				/* Integer option value */
+				g_hash_table_insert(opts, option->key,
+				  g_variant_new_int64(strtoull(s, NULL, 10)));
+			} else {
+				/* String option value */
+				g_hash_table_insert(opts, option->key, option->value);
+			}
 		}
 		if (!(di = srd_inst_new(sess, pd->name, opts)))
 			return FALSE;
