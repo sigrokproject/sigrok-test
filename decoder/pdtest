@@ -513,7 +513,10 @@ if len(sys.argv) == 1:
 
 opt_all = opt_run = opt_show = opt_list = opt_fix = opt_coverage = False
 report_dir = None
-opts, args = getopt(sys.argv[1:], "dvarslfcR:S:")
+try:
+    opts, args = getopt(sys.argv[1:], "dvarslfcR:S:")
+except Exception as e:
+    usage('error while parsing command line arguments: {}'.format(e))
 for opt, arg in opts:
     if opt == '-d':
         DEBUG += 1
