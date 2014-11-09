@@ -308,7 +308,8 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 	case SR_DF_LOGIC:
 		logic = packet->payload;
 		num_samples = logic->length / logic->unitsize;
-		DBG("Received SR_DF_LOGIC: %d samples", num_samples);
+		DBG("Received SR_DF_LOGIC (%"PRIu64" bytes, unitsize = %d).",
+			logic->length, logic->unitsize);
 		srd_session_send(sess, samplecnt, samplecnt + num_samples,
 				logic->data, logic->length);
 		samplecnt += logic->length / logic->unitsize;
@@ -331,13 +332,15 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 	struct option *option;
 	GVariant *gvar;
 	GHashTable *channels, *opts;
-	GSList *pdl, *l;
+	GSList *pdl, *l, *devices;
 	int idx, i;
 	int max_channel;
 	char **decoder_class;
 	struct sr_session *sr_sess;
 	gboolean is_number;
 	const char *s;
+	struct sr_dev_inst *sdi;
+	uint64_t unitsize;
 
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
@@ -349,6 +352,12 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 
 	if (sr_session_load(infile, &sr_sess) != SR_OK)
 		return FALSE;
+
+	sr_session_dev_list(sr_sess, &devices);
+	sdi = devices->data;
+	sr_config_get(sdi->driver, sdi, NULL, SR_CONF_CAPTURE_UNITSIZE, &gvar);
+	unitsize = g_variant_get_uint64(gvar);
+	g_variant_unref(gvar);
 
 	if (srd_session_new(&sess) != SRD_OK)
 		return FALSE;
@@ -414,8 +423,8 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 				g_variant_ref_sink(gvar);
 				g_hash_table_insert(channels, channel->name, gvar);
 			}
-			if (srd_inst_channel_set_all(di, channels,
-					(max_channel + 8) / 8) != SRD_OK)
+
+			if (srd_inst_channel_set_all(di, channels, unitsize) != SRD_OK)
 				return FALSE;
 			g_hash_table_destroy(channels);
 		}
