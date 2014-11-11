@@ -282,13 +282,16 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 	uint64_t samplerate;
 	int num_samples;
 	static int samplecnt = 0;
+	struct sr_dev_driver *driver;
 
 	sess = cb_data;
+
+	driver = sr_dev_inst_driver_get(sdi);
 
 	switch (packet->type) {
 	case SR_DF_HEADER:
 		DBG("Received SR_DF_HEADER");
-		if (sr_config_get(sdi->driver, sdi, NULL, SR_CONF_SAMPLERATE,
+		if (sr_config_get(driver, sdi, NULL, SR_CONF_SAMPLERATE,
 				&gvar) != SR_OK) {
 			ERR("Getting samplerate failed");
 			break;
@@ -341,6 +344,7 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 	const char *s;
 	struct sr_dev_inst *sdi;
 	uint64_t unitsize;
+	struct sr_dev_driver *driver;
 
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
@@ -355,7 +359,8 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 
 	sr_session_dev_list(sr_sess, &devices);
 	sdi = devices->data;
-	sr_config_get(sdi->driver, sdi, NULL, SR_CONF_CAPTURE_UNITSIZE, &gvar);
+	driver = sr_dev_inst_driver_get(sdi);
+	sr_config_get(driver, sdi, NULL, SR_CONF_CAPTURE_UNITSIZE, &gvar);
 	unitsize = g_variant_get_uint64(gvar);
 	g_variant_unref(gvar);
 
