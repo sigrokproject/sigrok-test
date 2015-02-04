@@ -50,7 +50,7 @@ In order to get the sigrok-test source code and build it, run:
 
 This will test the decoders located at /path/to/decoders:
 
- $ LD_LIBRARY_PATH=$HOME/sr/lib ./decoder/test/pdtest -r -v -a
+ $ LD_LIBRARY_PATH=$HOME/sr/lib ./decoder/pdtest -r -v -a
 
 
 Copyright and license
