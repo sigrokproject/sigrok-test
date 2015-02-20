@@ -1,4 +1,4 @@
-474508-478634 pan1321: text-verbose: "Sending 10 data bytes: 68 65 6c 6c 6f 77 6f 72 6c 64"
-474508-478634 pan1321: text: "Send 10 = 68 65 6c 6c 6f 77 6f 72 6c 64"
-479980-480639 pan1321: text-verbose: "Device acknowledged last command"
-479980-480639 pan1321: text: "ACK"
+474507-478635 pan1321: text-verbose: "Sending 10 data bytes: 68 65 6c 6c 6f 77 6f 72 6c 64"
+474507-478635 pan1321: text: "Send 10 = 68 65 6c 6c 6f 77 6f 72 6c 64"
+479979-480640 pan1321: text-verbose: "Device acknowledged last command"
+479979-480640 pan1321: text: "ACK"
