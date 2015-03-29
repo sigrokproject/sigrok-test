@@ -53,17 +53,17 @@ struct option {
 };
 
 struct pd {
-	char *name;
+	const char *name;
 	GSList *channels;
 	GSList *options;
 };
 
 struct output {
-	char *pd;
+	const char *pd;
 	int type;
-	char *class;
+	const char *class;
 	int class_idx;
-	char *outfile;
+	const char *outfile;
 	int outfd;
 };
 
@@ -74,12 +74,12 @@ struct cvg {
 	GSList *missed_lines;
 };
 
-static struct cvg *get_mod_cov(PyObject *py_cov, char *module_name);
-static void cvg_add(struct cvg *dst, struct cvg *src);
+static struct cvg *get_mod_cov(PyObject *py_cov, const char *module_name);
+static void cvg_add(struct cvg *dst, const struct cvg *src);
 static struct cvg *cvg_new(void);
-static gboolean find_missed_line(struct cvg *cvg, char *linespec);
+static gboolean find_missed_line(struct cvg *cvg, const char *linespec);
 
-static void logmsg(char *prefix, FILE *out, const char *format, va_list args)
+static void logmsg(const char *prefix, FILE *out, const char *format, va_list args)
 {
 	if (prefix)
 		fprintf(out, "%s", prefix);
@@ -131,7 +131,7 @@ static int srd_log(void *cb_data, int loglevel, const char *format, va_list args
 	return SRD_OK;
 }
 
-static void usage(char *msg)
+static void usage(const char *msg)
 {
 	if (msg)
 		fprintf(stderr, "%s\n", msg);
@@ -327,7 +327,7 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 
 }
 
-static int run_testcase(char *infile, GSList *pdlist, struct output *op)
+static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 {
 	struct srd_session *sess;
 	struct srd_decoder *dec;
@@ -528,7 +528,7 @@ static PyObject *start_coverage(GSList *pdlist)
 	return py_cov;
 }
 
-static struct cvg *get_mod_cov(PyObject *py_cov, char *module_name)
+static struct cvg *get_mod_cov(PyObject *py_cov, const char *module_name)
 {
 	PyObject *py_mod, *py_pathlist, *py_path, *py_func, *py_pd;
 	PyObject *py_result, *py_missed, *py_item;
@@ -605,7 +605,7 @@ static struct cvg *cvg_new(void)
 	return cvg;
 }
 
-static gboolean find_missed_line(struct cvg *cvg, char *linespec)
+static gboolean find_missed_line(struct cvg *cvg, const char *linespec)
 {
 	GSList *l;
 
@@ -616,7 +616,7 @@ static gboolean find_missed_line(struct cvg *cvg, char *linespec)
 	return FALSE;
 }
 
-static void cvg_add(struct cvg *dst, struct cvg *src)
+static void cvg_add(struct cvg *dst, const struct cvg *src)
 {
 	GSList *l;
 	char *linespec;
