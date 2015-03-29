@@ -40,6 +40,7 @@
 int debug = FALSE;
 int statistics = FALSE;
 char *coverage_report;
+struct sr_context *ctx;
 
 struct channel {
 	char *name;
@@ -354,7 +355,7 @@ static int run_testcase(char *infile, GSList *pdlist, struct output *op)
 		}
 	}
 
-	if (sr_session_load(infile, &sr_sess) != SR_OK)
+	if (sr_session_load(ctx, infile, &sr_sess) != SR_OK)
 		return FALSE;
 
 	sr_session_dev_list(sr_sess, &devices);
@@ -709,7 +710,6 @@ static int report_coverage(PyObject *py_cov, GSList *pdlist)
 
 int main(int argc, char **argv)
 {
-	struct sr_context *ctx;
 	PyObject *coverage;
 	GSList *pdlist;
 	struct pd *pd;
