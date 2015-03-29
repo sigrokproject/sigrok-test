@@ -37,10 +37,10 @@
 #include <sched.h>
 #endif
 
-int debug = FALSE;
-int statistics = FALSE;
-char *coverage_report;
-struct sr_context *ctx;
+static int debug = FALSE;
+static int statistics = FALSE;
+static char *coverage_report;
+static struct sr_context *ctx;
 
 struct channel {
 	char *name;
@@ -74,10 +74,10 @@ struct cvg {
 	GSList *missed_lines;
 };
 
-struct cvg *get_mod_cov(PyObject *py_cov, char *module_name);
-void cvg_add(struct cvg *dst, struct cvg *src);
-struct cvg *cvg_new(void);
-gboolean find_missed_line(struct cvg *cvg, char *linespec);
+static struct cvg *get_mod_cov(PyObject *py_cov, char *module_name);
+static void cvg_add(struct cvg *dst, struct cvg *src);
+static struct cvg *cvg_new(void);
+static gboolean find_missed_line(struct cvg *cvg, char *linespec);
 
 static void logmsg(char *prefix, FILE *out, const char *format, va_list args)
 {
@@ -524,7 +524,7 @@ static PyObject *start_coverage(GSList *pdlist)
 	return py_cov;
 }
 
-struct cvg *get_mod_cov(PyObject *py_cov, char *module_name)
+static struct cvg *get_mod_cov(PyObject *py_cov, char *module_name)
 {
 	PyObject *py_mod, *py_pathlist, *py_path, *py_func, *py_pd;
 	PyObject *py_result, *py_missed, *py_item;
@@ -592,7 +592,7 @@ struct cvg *get_mod_cov(PyObject *py_cov, char *module_name)
 	return cvg_mod;
 }
 
-struct cvg *cvg_new(void)
+static struct cvg *cvg_new(void)
 {
 	struct cvg *cvg;
 
@@ -601,7 +601,7 @@ struct cvg *cvg_new(void)
 	return cvg;
 }
 
-gboolean find_missed_line(struct cvg *cvg, char *linespec)
+static gboolean find_missed_line(struct cvg *cvg, char *linespec)
 {
 	GSList *l;
 
@@ -612,7 +612,7 @@ gboolean find_missed_line(struct cvg *cvg, char *linespec)
 	return FALSE;
 }
 
-void cvg_add(struct cvg *dst, struct cvg *src)
+static void cvg_add(struct cvg *dst, struct cvg *src)
 {
 	GSList *l;
 	char *linespec;
