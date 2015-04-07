@@ -1,124 +1,124 @@
-74481-74562 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+74481-74562 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-474690-474771 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+474690-474771 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-874926-875007 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+874926-875007 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-1275275-1275356 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+1275275-1275356 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-1675411-1675492 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+1675411-1675492 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-2075694-2075776 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+2075694-2075776 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-2475826-2475907 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+2475826-2475907 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-2876131-2876212 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+2876131-2876212 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-3276350-3276432 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+3276350-3276432 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-3676596-3676677 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+3676596-3676677 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-4076734-4076816 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+4076734-4076816 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-4476950-4477031 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+4476950-4477031 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-4877190-4877270 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+4877190-4877270 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-5277515-5277596 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+5277515-5277596 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-5677666-5677746 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+5677666-5677746 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-6077993-6078073 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+6077993-6078073 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-6478092-6478174 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+6478092-6478174 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-6878363-6878444 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+6878363-6878444 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-7278596-7278677 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+7278596-7278677 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-7678857-7678938 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+7678857-7678938 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
 OR[1:0] = 10: vertical in inverted orientation
 "
-8078984-8079065 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occured
+8078984-8079065 mxc6225xu: text: "INT = 0: Orientation unchanged and no shake event occurred
 SH[1:0] = 0: Shake event: none
 TILT = 1: Orientation measurement is not valid
 ORI[1:0] = 10: vertical in inverted orientation
