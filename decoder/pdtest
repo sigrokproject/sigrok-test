@@ -327,7 +327,7 @@ def run_tests(tests, fix=False):
                         opargs[-1] += ":%s" % op['class']
                         name += "/%s" % op['class']
                     if VERBOSE:
-                        dots = '.' * (60 - len(name) - 2)
+                        dots = '.' * (77 - len(name) - 2)
                         INFO("%s %s " % (name, dots), end='')
                     results.append({
                         'testcase': name,
