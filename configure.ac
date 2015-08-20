@@ -85,7 +85,7 @@ PKG_CHECK_MODULES([libsigrok], [libsigrok >= 0.3.0],
 	LIBS="$LIBS $libsigrok_LIBS"])
 
 # libsigrokdecode is always needed.
-PKG_CHECK_MODULES([libsigrokdecode], [libsigrokdecode >= 0.3.0],
+PKG_CHECK_MODULES([libsigrokdecode], [libsigrokdecode >= 0.4.0],
 	[AM_CFLAGS="$AM_CFLAGS $libsigrokdecode_CFLAGS";
 	LIBS="$LIBS $libsigrokdecode_LIBS"])
 
@@ -119,7 +119,7 @@ else
 fi
 
 # Note: This only works for libs with pkg-config integration.
-for lib in "glib-2.0 >= 2.24.0" "libsigrok >= 0.3.0" "libsigrokdecode >= 0.3.0"; do
+for lib in "glib-2.0 >= 2.24.0" "libsigrok >= 0.3.0" "libsigrokdecode >= 0.4.0"; do
 	optional="REQUIRED"
 	if `$PKG_CONFIG --exists $lib`; then
 		ver=`$PKG_CONFIG --modversion $lib`

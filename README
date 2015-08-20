@@ -29,7 +29,7 @@ Requirements
  - libglib >= 2.24.0
  - Python >= 3.2
  - libsigrok >= 0.3.0
- - libsigrokdecode >= 0.3.0
+ - libsigrokdecode >= 0.4.0
  - python3-coverage
 
 
