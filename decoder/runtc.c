@@ -317,7 +317,7 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 		DBG("Received SR_DF_LOGIC (%"PRIu64" bytes, unitsize = %d).",
 			logic->length, logic->unitsize);
 		srd_session_send(sess, samplecnt, samplecnt + num_samples,
-				logic->data, logic->length);
+				logic->data, logic->length, logic->unitsize);
 		samplecnt += logic->length / logic->unitsize;
 		break;
 	case SR_DF_END:
@@ -345,9 +345,6 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	struct sr_session *sr_sess;
 	gboolean is_number;
 	const char *s;
-	struct sr_dev_inst *sdi;
-	uint64_t unitsize;
-	struct sr_dev_driver *driver;
 
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
@@ -361,11 +358,6 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		return FALSE;
 
 	sr_session_dev_list(sr_sess, &devices);
-	sdi = devices->data;
-	driver = sr_dev_inst_driver_get(sdi);
-	sr_config_get(driver, sdi, NULL, SR_CONF_CAPTURE_UNITSIZE, &gvar);
-	unitsize = g_variant_get_uint64(gvar);
-	g_variant_unref(gvar);
 
 	if (srd_session_new(&sess) != SRD_OK)
 		return FALSE;
@@ -432,7 +424,7 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 				g_hash_table_insert(channels, channel->name, gvar);
 			}
 
-			if (srd_inst_channel_set_all(di, channels, unitsize) != SRD_OK)
+			if (srd_inst_channel_set_all(di, channels) != SRD_OK)
 				return FALSE;
 			g_hash_table_destroy(channels);
 		}
