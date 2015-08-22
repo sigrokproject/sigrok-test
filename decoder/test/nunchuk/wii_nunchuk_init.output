@@ -1,0 +1,3 @@
+646327-646410 nunchuk: nunchuk-write: "Nunchuk write: 0x40"
+646591-646673 nunchuk: nunchuk-write: "Nunchuk write: 0x00"
+645807-646743 nunchuk: cmd-init: "Initialize Nunchuk" "Init Nunchuk" "Init" "I"
