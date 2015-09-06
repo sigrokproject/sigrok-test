@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 ##
 ## This file is part of the sigrok-test project.
 ##
@@ -19,8 +19,7 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
-echo "Generating build system..."
-aclocal || exit 1
-automake --add-missing --copy || exit 1
-autoconf || exit 1
+test -n "$srcdir" || srcdir=`dirname "$0"`
+test -n "$srcdir" || srcdir=.
 
+autoreconf --force --install --verbose "$srcdir"

@@ -23,13 +23,14 @@ AC_PREREQ([2.63])
 
 AC_INIT([sigrok-test], [0.1.0], [sigrok-devel@lists.sourceforge.net],
 	[sigrok-test], [http://www.sigrok.org])
+AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_AUX_DIR([autostuff])
 
 # We require at least automake 1.11 (needed for 'silent rules').
-AM_INIT_AUTOMAKE([1.11 -Wall -Werror subdir-objects check-news])
-m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+AM_INIT_AUTOMAKE([1.11 -Wall -Werror no-define subdir-objects check-news])
+AM_SILENT_RULES([yes])
 
-# Enable more compiler warnings.
-AM_CFLAGS="$AM_CFLAGS -Wall -Wextra -Wmissing-prototypes"
+AC_CANONICAL_HOST
 
 # Checks for programs.
 AC_PROG_CC
@@ -37,95 +38,96 @@ AC_PROG_CC
 # Required for per-target flags or subdir-objects with C sources.
 AM_PROG_CC_C_O
 
+# Get compiler versions.
+SR_PROG_VERSION([$CC], [st_cc_version])
+
+############################
+##  Package dependencies  ##
+############################
+
 # Initialize pkg-config.
 # We require at least 0.22, as "Requires.private" behaviour changed there.
 PKG_PROG_PKG_CONFIG([0.22])
 
-AC_ARG_WITH(decodersdir,
-	AC_HELP_STRING([--with-decodersdir=path],
-	[specify decodersdir [default=DATAROOTDIR/libsigrokdecode/decoders]]),
-	[DECODERS_DIR=$withval], [DECODERS_DIR=$datadir/libsigrokdecode/decoders])
-
-# Checks for libraries.
-
-# libglib-2.0 is always needed.
-AM_PATH_GLIB_2_0([2.24.0],
-	[AM_CFLAGS="$AM_CFLAGS $GLIB_CFLAGS"; LIBS="$LIBS $GLIB_LIBS"])
+# Keep track of all checked modules so we can list them at the end.
+ST_PKGLIBS=
+SR_PKG_CHECK_SUMMARY([st_pkglibs_summary])
 
 # Python 3 is always needed.
-# Note: We need to try a few different variants, since some systems have a
-# python3.pc file, others have a python-3.3.pc file, and so on.
-# See also: http://sigrok.org/wiki/Libsigrokdecode/Python
-CPPFLAGS_PYTHON=""
-LDFLAGS_PYTHON=""
-pyver="none"
-PKG_CHECK_MODULES([python3], [python3 >= 3.2],
-	[pyver=`$PKG_CONFIG --modversion python3`;
-	CPPFLAGS_PYTHON="$CPPFLAGS_PYTHON $python3_CFLAGS";
-	LDFLAGS_PYTHON="$LDFLAGS_PYTHON $python3_LIBS"],
-[PKG_CHECK_MODULES([python34], [python-3.4 >= 3.4],
-	[pyver=`$PKG_CONFIG --modversion python-3.4`;
-	CPPFLAGS_PYTHON="$CPPFLAGS_PYTHON $python34_CFLAGS";
-	LDFLAGS_PYTHON="$LDFLAGS_PYTHON $python34_LIBS"],
-[PKG_CHECK_MODULES([python33], [python-3.3 >= 3.3],
-	[pyver=`$PKG_CONFIG --modversion python-3.3`;
-	CPPFLAGS_PYTHON="$CPPFLAGS_PYTHON $python33_CFLAGS";
-	LDFLAGS_PYTHON="$LDFLAGS_PYTHON $python33_LIBS"],
-[PKG_CHECK_MODULES([python32], [python-3.2 >= 3.2],
-	[pyver=`$PKG_CONFIG --modversion python-3.2`;
-	CPPFLAGS_PYTHON="$CPPFLAGS_PYTHON $python32_CFLAGS";
-	LDFLAGS_PYTHON="$LDFLAGS_PYTHON $python32_LIBS"],
-)])])])
-AM_CFLAGS="$AM_CFLAGS $CPPFLAGS_PYTHON"
-AM_LDFLAGS="$AM_LDFLAGS $LDFLAGS_PYTHON"
+SR_PKG_CHECK([python3], [ST_PKGLIBS],
+	[python3 >= 3.2], [python-3.4 >= 3.4], [python-3.3 >= 3.3], [python-3.2 >= 3.2])
+AS_IF([test "x$sr_have_python3" = xno],
+	[AC_MSG_ERROR([Cannot find Python 3 development headers.])])
 
-# libsigrok is always needed.
-PKG_CHECK_MODULES([libsigrok], [libsigrok >= 0.3.0],
-	[AM_CFLAGS="$AM_CFLAGS $libsigrok_CFLAGS";
-	LIBS="$LIBS $libsigrok_LIBS"])
+######################
+##  Feature checks  ##
+######################
 
-# libsigrokdecode is always needed.
-PKG_CHECK_MODULES([libsigrokdecode], [libsigrokdecode >= 0.4.0],
-	[AM_CFLAGS="$AM_CFLAGS $libsigrokdecode_CFLAGS";
-	LIBS="$LIBS $libsigrokdecode_LIBS"])
+AC_LANG([C])
+
+# Enable the C99 standard if possible.
+ST_EXTRA_CFLAGS=
+SR_CHECK_COMPILE_FLAGS([ST_EXTRA_CFLAGS], [C99],
+	[-std=c99 -c99 -AC99 -qlanglvl=extc99])
+
+SR_ARG_ENABLE_WARNINGS([ST_WFLAGS],
+	[-Wall], [-Wall -Wextra -Wmissing-prototypes])
+
+# Check host characteristics.
+AC_SYS_LARGEFILE
 
 # Checks for header files.
-AC_CHECK_HEADER([sys/resource.h])
+AC_CHECK_HEADER([sys/resource.h],,
+	[AC_MSG_ERROR([Missing required header sys/resource.h])])
 
-AC_SUBST(DECODERS_DIR)
-AC_SUBST(MAKEFLAGS, '--no-print-directory')
-AC_SUBST(AM_LIBTOOLFLAGS, '--silent')
+##############################
+##  Finalize configuration  ##
+##############################
 
-AC_SUBST(AM_CFLAGS)
-AC_SUBST(AM_LDFLAGS)
+# Retrieve the compile and link flags for all modules combined.
+# Also, bail out at this point if any module dependency is not met.
+PKG_CHECK_MODULES([SIGROK_TEST],
+	[glib-2.0 >= 2.24.0 libsigrok >= 0.3.0 libsigrokdecode >= 0.4.0 $ST_PKGLIBS])
+
+# Allow the user to override the location of the protocol decoders.
+AC_ARG_WITH([decodersdir],
+	[AS_HELP_STRING([--with-decodersdir=DIR],
+			[specify location of protcol decoders [default=auto]])],
+	[st_decodersdir=$withval], [st_decodersdir=auto])
+
+AS_IF([test "x$st_decodersdir" = xauto], [
+	st_decodersdir=`$PKG_CONFIG --variable=decodersdir libsigrokdecode 2>&AS_MESSAGE_LOG_FD`
+	AS_IF([test "[$]?" != 0 || test -z "$st_decodersdir"],
+		[st_decodersdir='$(datadir)/libsigrokdecode/decoders'])
+])
+AC_SUBST([DECODERS_DIR], [$st_decodersdir])
+
+st_glib_version=`$PKG_CONFIG --modversion glib-2.0 2>&AS_MESSAGE_LOG_FD`
+st_libsigrok_version=`$PKG_CONFIG --modversion libsigrok 2>&AS_MESSAGE_LOG_FD`
+st_libsigrokdecode_version=`$PKG_CONFIG --modversion libsigrokdecode 2>&AS_MESSAGE_LOG_FD`
 
 AC_CONFIG_FILES([Makefile])
-
 AC_OUTPUT
 
-echo
-echo "sigrok-test configuration summary:"
-echo
-echo "  - Package version (major.minor.micro): 0.1.0"
-echo "  - Prefix: $prefix"
-echo
-echo "Detected libraries:"
-echo
+cat >&AS_MESSAGE_FD <<_EOF
 
-if test "x$pyver" = "xnone"; then
-	echo "  - (REQUIRED) python >= 3.2: no"
-else
-	echo "  - (REQUIRED) python >= 3.2: yes ($pyver)"
-fi
+sigrok-test configuration summary:
+ - Package version................. $PACKAGE_VERSION
+ - Prefix.......................... $prefix
+ - Decoders directory.............. $st_decodersdir
+ - Building on..................... $build
+ - Building for.................... $host
 
-# Note: This only works for libs with pkg-config integration.
-for lib in "glib-2.0 >= 2.24.0" "libsigrok >= 0.3.0" "libsigrokdecode >= 0.4.0"; do
-	optional="REQUIRED"
-	if `$PKG_CONFIG --exists $lib`; then
-		ver=`$PKG_CONFIG --modversion $lib`
-		answer="yes ($ver)"
-	else
-		answer="no"
-	fi
-	echo "  - ($optional) $lib: $answer"
-done
+Compile configuration:
+ - C compiler...................... $CC
+ - C compiler version.............. $st_cc_version
+ - C compiler flags................ $CFLAGS
+ - Additional C compiler flags..... $ST_EXTRA_CFLAGS
+ - C compiler warnings............. $ST_WFLAGS
+
+Detected libraries (required):
+ - glib-2.0 >= 2.24.0.............. $st_glib_version
+ - libsigrok >= 0.3.0.............. $st_libsigrok_version
+ - libsigrokdecode >= 0.4.0........ $st_libsigrokdecode_version
+$st_pkglibs_summary
+_EOF

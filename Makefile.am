@@ -18,14 +18,20 @@
 ## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ##
 
+ACLOCAL_AMFLAGS = -I m4
+GNUMAKEFLAGS = --no-print-directory
+
+AM_CPPFLAGS = -D_POSIX_C_SOURCE=200112L -DDECODERS_DIR='"$(DECODERS_DIR)"'
+AM_CFLAGS = $(ST_EXTRA_CFLAGS) $(ST_WFLAGS) $(SIGROK_TEST_CFLAGS)
+
 noinst_PROGRAMS = decoder/runtc
 
 decoder_runtc_SOURCES = decoder/runtc.c
-decoder_runtc_CPPFLAGS = -DDECODERS_DIR='"$(DECODERS_DIR)"'
+decoder_runtc_LDADD = $(SIGROK_TEST_LIBS)
 
 MAINTAINERCLEANFILES = ChangeLog
 
 .PHONY: ChangeLog
 ChangeLog:
-	git --git-dir $(top_srcdir)/.git log > ChangeLog || touch ChangeLog
+	git --git-dir '$(top_srcdir)/.git' log >$@ || touch $@
 
