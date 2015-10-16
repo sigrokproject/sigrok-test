@@ -349,7 +349,7 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
 			ERR("Unable to open %s for writing: %s", op->outfile,
-					strerror(errno));
+					g_strerror(errno));
 			return FALSE;
 		}
 	}
