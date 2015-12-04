@@ -1,0 +1,7 @@
+647229-648587 usb_request: request-bulk-read: "BULK in: [ F2 5E 62 00 00 00 00 00 ] : ACK"
+1847221-1848579 usb_request: request-bulk-read: "BULK in: [ F3 77 8F 9E 00 00 00 00 ] : ACK"
+3047230-3048587 usb_request: request-bulk-read: "BULK in: [ F3 A0 B8 C0 00 00 00 00 ] : ACK"
+4247247-4248596 usb_request: request-bulk-read: "BULK in: [ F2 D4 E8 00 00 00 00 00 ] : ACK"
+5847247-5848597 usb_request: request-bulk-read: "BULK in: [ F0 00 00 00 00 00 00 00 ] : ACK"
+7047248-7048605 usb_request: request-bulk-read: "BULK in: [ F0 00 00 00 00 00 00 00 ] : ACK"
+8247231-8248580 usb_request: request-bulk-read: "BULK in: [ F0 00 00 00 00 00 00 00 ] : ACK"

@@ -1,0 +1,8 @@
+3938008-3960581 usb_request: request-setup-read: "SETUP in: [ 80 06 00 01 00 00 40 00 ][ 12 01 10 01 00 00 00 08 D9 04 33 11 00 01 00 00 00 01 ] : ACK"
+5487752-5492419 usb_request: request-setup-write: "SETUP out: [ 00 05 0D 00 00 00 00 00 ][ ] : ACK"
+5597602-5620586 usb_request: request-setup-read: "SETUP in: [ 80 06 00 01 00 00 12 00 ][ 12 01 10 01 00 00 00 08 D9 04 33 11 00 01 00 00 00 01 ] : ACK"
+5620879-5635579 usb_request: request-setup-read: "SETUP in: [ 80 06 00 02 00 00 09 00 ][ 09 02 22 00 01 01 00 A0 32 ] : ACK"
+5635811-5676345 usb_request: request-setup-read: "SETUP in: [ 80 06 00 02 00 00 22 00 ][ 09 02 22 00 01 01 00 A0 32 09 04 00 00 01 03 01 02 00 09 21 10 01 00 01 22 34 00 07 05 81 03 04 00 0A ] : ACK"
+5683055-5688616 usb_request: request-setup-write: "SETUP out: [ 00 09 01 00 00 00 00 00 ][ ] : ACK"
+5689162-5693068 usb_request: request-setup-write: "SETUP out: [ 21 0A 00 00 00 00 00 00 ][ ] : STALL"
+5694947-5751900 usb_request: request-setup-read: "SETUP in: [ 81 06 00 22 00 00 34 00 ][ 05 01 09 02 A1 01 09 01 A1 00 05 09 19 01 29 03 15 00 25 01 95 03 75 01 81 02 95 01 75 05 81 01 05 01 09 30 09 31 09 38 15 81 25 7F 75 08 95 03 81 06 C0 C0 ] : ACK"
