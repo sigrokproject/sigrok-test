@@ -1,0 +1,4 @@
+0-201 swd: ['LINE_RESET', None]
+265-467 swd: ['LINE_RESET', None]
+1216-1259 swd: ['DP_READ', (0, '', 'NOREPLY')]
+1403-1445 swd: ['DP_WRITE', (0, '', 'NOREPLY')]
