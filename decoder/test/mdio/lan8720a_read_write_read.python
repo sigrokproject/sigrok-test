@@ -1,3 +1,3 @@
-50-498 mdio: ['DATA', 0]
-698-1146 mdio: ['DATA', 0]
-1153-1601 mdio: ['DATA', 0]
+50-498 mdio: [(False, -1, True, 1, 0, 12288)]
+698-1146 mdio: [(False, -1, False, 1, 0, 32768)]
+1153-1601 mdio: [(False, -1, True, 1, 0, 32768)]
