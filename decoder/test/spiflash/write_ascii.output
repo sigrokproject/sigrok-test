@@ -1,0 +1,2856 @@
+27808-27829 spiflash: read: "Command: Read status register"
+27833-27854 spiflash: bits: "Status register: 0x00"
+27833-27854 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+27854-27873 spiflash: bits: "Status register: 0x00"
+27854-27873 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+75209-75228 spiflash: dsry: "Command: Write enable"
+80425-80444 spiflash: be: "Command: Page program"
+80487-80508 spiflash: bits: "Page address: 0x016100"
+80508-86359 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+87321-87342 spiflash: read: "Command: Read status register"
+87346-87367 spiflash: bits: "Status register: 0x03"
+87346-87367 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+87367-87388 spiflash: bits: "Status register: 0x03"
+87367-87388 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+127360-127379 spiflash: read: "Command: Read status register"
+127385-127404 spiflash: bits: "Status register: 0x00"
+127385-127404 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+127405-127426 spiflash: bits: "Status register: 0x00"
+127405-127426 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+179904-179925 spiflash: dsry: "Command: Write enable"
+181036-181057 spiflash: be: "Command: Page program"
+181099-181118 spiflash: bits: "Page address: 0x016200"
+181120-186453 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+187196-187215 spiflash: read: "Command: Read status register"
+187221-187240 spiflash: bits: "Status register: 0x03"
+187221-187240 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+187242-187261 spiflash: bits: "Status register: 0x03"
+187242-187261 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+227730-227751 spiflash: read: "Command: Read status register"
+227755-227776 spiflash: bits: "Status register: 0x00"
+227755-227776 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+227776-227797 spiflash: bits: "Status register: 0x00"
+227776-227797 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+279896-279915 spiflash: dsry: "Command: Write enable"
+281020-281039 spiflash: be: "Command: Page program"
+281082-281103 spiflash: bits: "Page address: 0x016300"
+281103-286436 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+287293-287312 spiflash: read: "Command: Read status register"
+287318-287337 spiflash: bits: "Status register: 0x03"
+287318-287337 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+287339-287358 spiflash: bits: "Status register: 0x03"
+287339-287358 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+327923-327942 spiflash: read: "Command: Read status register"
+327948-327967 spiflash: bits: "Status register: 0x00"
+327948-327967 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+327968-327989 spiflash: bits: "Status register: 0x00"
+327968-327989 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+379877-379898 spiflash: dsry: "Command: Write enable"
+381006-381025 spiflash: be: "Command: Page program"
+381068-381089 spiflash: bits: "Page address: 0x016400"
+381089-386423 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+387281-387300 spiflash: read: "Command: Read status register"
+387306-387325 spiflash: bits: "Status register: 0x03"
+387306-387325 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+387327-387346 spiflash: bits: "Status register: 0x03"
+387327-387346 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+427704-427723 spiflash: read: "Command: Read status register"
+427729-427748 spiflash: bits: "Status register: 0x00"
+427729-427748 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+427750-427769 spiflash: bits: "Status register: 0x00"
+427750-427769 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+475053-475074 spiflash: dsry: "Command: Write enable"
+479968-479987 spiflash: be: "Command: Page program"
+480030-480051 spiflash: bits: "Page address: 0x016500"
+480051-485385 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+486102-486121 spiflash: read: "Command: Read status register"
+486127-486146 spiflash: bits: "Status register: 0x03"
+486127-486146 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+486148-486167 spiflash: bits: "Status register: 0x03"
+486148-486167 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+525686-525707 spiflash: read: "Command: Read status register"
+525711-525732 spiflash: bits: "Status register: 0x00"
+525711-525732 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+525732-525751 spiflash: bits: "Status register: 0x00"
+525732-525751 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+579864-579885 spiflash: dsry: "Command: Write enable"
+580978-580997 spiflash: be: "Command: Page program"
+581040-581061 spiflash: bits: "Page address: 0x016600"
+581061-586395 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+587264-587283 spiflash: read: "Command: Read status register"
+587289-587308 spiflash: bits: "Status register: 0x03"
+587289-587308 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+587310-587329 spiflash: bits: "Status register: 0x03"
+587310-587329 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+627728-627747 spiflash: read: "Command: Read status register"
+627753-627772 spiflash: bits: "Status register: 0x00"
+627753-627772 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+627774-627793 spiflash: bits: "Status register: 0x00"
+627774-627793 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+679830-679849 spiflash: dsry: "Command: Write enable"
+680964-680983 spiflash: be: "Command: Page program"
+681026-681047 spiflash: bits: "Page address: 0x016700"
+681047-686381 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+687241-687262 spiflash: read: "Command: Read status register"
+687266-687287 spiflash: bits: "Status register: 0x03"
+687266-687287 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+687287-687306 spiflash: bits: "Status register: 0x03"
+687287-687306 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+727660-727679 spiflash: read: "Command: Read status register"
+727685-727704 spiflash: bits: "Status register: 0x00"
+727685-727704 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+727706-727725 spiflash: bits: "Status register: 0x00"
+727706-727725 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+779824-779843 spiflash: dsry: "Command: Write enable"
+780948-780969 spiflash: be: "Command: Page program"
+781011-781030 spiflash: bits: "Page address: 0x016800"
+781032-786365 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+787224-787243 spiflash: read: "Command: Read status register"
+787249-787268 spiflash: bits: "Status register: 0x03"
+787249-787268 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+787270-787289 spiflash: bits: "Status register: 0x03"
+787270-787289 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+825635-825654 spiflash: read: "Command: Read status register"
+825660-825679 spiflash: bits: "Status register: 0x00"
+825660-825679 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+825681-825700 spiflash: bits: "Status register: 0x00"
+825681-825700 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+879799-879820 spiflash: dsry: "Command: Write enable"
+880940-880959 spiflash: be: "Command: Page program"
+881002-881023 spiflash: bits: "Page address: 0x016900"
+881023-886357 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+887211-887230 spiflash: read: "Command: Read status register"
+887236-887255 spiflash: bits: "Status register: 0x03"
+887236-887255 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+887257-887276 spiflash: bits: "Status register: 0x03"
+887257-887276 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+925654-925675 spiflash: read: "Command: Read status register"
+925679-925700 spiflash: bits: "Status register: 0x00"
+925679-925700 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+925700-925719 spiflash: bits: "Status register: 0x00"
+925700-925719 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+979779-979800 spiflash: dsry: "Command: Write enable"
+980925-980944 spiflash: be: "Command: Page program"
+980987-981008 spiflash: bits: "Page address: 0x016a00"
+981008-986342 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+987204-987223 spiflash: read: "Command: Read status register"
+987229-987248 spiflash: bits: "Status register: 0x03"
+987229-987248 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+987249-987270 spiflash: bits: "Status register: 0x03"
+987249-987270 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1025608-1025627 spiflash: read: "Command: Read status register"
+1025633-1025652 spiflash: bits: "Status register: 0x00"
+1025633-1025652 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1025653-1025674 spiflash: bits: "Status register: 0x00"
+1025653-1025674 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1074791-1074812 spiflash: dsry: "Command: Write enable"
+1079896-1079915 spiflash: be: "Command: Page program"
+1079958-1079979 spiflash: bits: "Page address: 0x016b00"
+1079979-1085313 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+1086031-1086050 spiflash: read: "Command: Read status register"
+1086056-1086075 spiflash: bits: "Status register: 0x03"
+1086056-1086075 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1086077-1086096 spiflash: bits: "Status register: 0x03"
+1086077-1086096 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1125602-1125623 spiflash: read: "Command: Read status register"
+1125627-1125648 spiflash: bits: "Status register: 0x00"
+1125627-1125648 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1125648-1125667 spiflash: bits: "Status register: 0x00"
+1125648-1125667 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1179768-1179787 spiflash: dsry: "Command: Write enable"
+1180902-1180921 spiflash: be: "Command: Page program"
+1180964-1180985 spiflash: bits: "Page address: 0x016c00"
+1180985-1186319 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+1187174-1187193 spiflash: read: "Command: Read status register"
+1187199-1187218 spiflash: bits: "Status register: 0x03"
+1187199-1187218 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1187219-1187240 spiflash: bits: "Status register: 0x03"
+1187219-1187240 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1227741-1227762 spiflash: read: "Command: Read status register"
+1227766-1227787 spiflash: bits: "Status register: 0x00"
+1227766-1227787 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1227787-1227808 spiflash: bits: "Status register: 0x00"
+1227787-1227808 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1279741-1279762 spiflash: dsry: "Command: Write enable"
+1280886-1280907 spiflash: be: "Command: Page program"
+1280949-1280968 spiflash: bits: "Page address: 0x016d00"
+1280970-1286303 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+1287055-1287074 spiflash: read: "Command: Read status register"
+1287080-1287099 spiflash: bits: "Status register: 0x03"
+1287080-1287099 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1287100-1287121 spiflash: bits: "Status register: 0x03"
+1287100-1287121 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1325459-1325478 spiflash: read: "Command: Read status register"
+1325484-1325503 spiflash: bits: "Status register: 0x00"
+1325484-1325503 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1325505-1325524 spiflash: bits: "Status register: 0x00"
+1325505-1325524 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1375039-1375058 spiflash: dsry: "Command: Write enable"
+1379449-1379470 spiflash: be: "Command: Page program"
+1379512-1379531 spiflash: bits: "Page address: 0x016e00"
+1379533-1384866 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+1385972-1385991 spiflash: read: "Command: Read status register"
+1385997-1386016 spiflash: bits: "Status register: 0x03"
+1385997-1386016 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1386017-1386038 spiflash: bits: "Status register: 0x03"
+1386017-1386038 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1425548-1425569 spiflash: read: "Command: Read status register"
+1425573-1425594 spiflash: bits: "Status register: 0x00"
+1425573-1425594 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1425594-1425613 spiflash: bits: "Status register: 0x00"
+1425594-1425613 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1475031-1475050 spiflash: dsry: "Command: Write enable"
+1479303-1479322 spiflash: be: "Command: Page program"
+1479365-1479386 spiflash: bits: "Page address: 0x016f00"
+1479386-1484720 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+1485967-1485986 spiflash: read: "Command: Read status register"
+1485992-1486011 spiflash: bits: "Status register: 0x03"
+1485992-1486011 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1486013-1486032 spiflash: bits: "Status register: 0x03"
+1486013-1486032 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1525434-1525455 spiflash: read: "Command: Read status register"
+1525459-1525480 spiflash: bits: "Status register: 0x00"
+1525459-1525480 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1525480-1525501 spiflash: bits: "Status register: 0x00"
+1525480-1525501 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1575417-1575438 spiflash: dsry: "Command: Write enable"
+1578920-1578941 spiflash: be: "Command: Page program"
+1578983-1579002 spiflash: bits: "Page address: 0x017000"
+1579003-1584337 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+1585947-1585968 spiflash: read: "Command: Read status register"
+1585972-1585993 spiflash: bits: "Status register: 0x03"
+1585972-1585993 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1585993-1586014 spiflash: bits: "Status register: 0x03"
+1585993-1586014 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1625419-1625438 spiflash: read: "Command: Read status register"
+1625444-1625463 spiflash: bits: "Status register: 0x00"
+1625444-1625463 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1625464-1625485 spiflash: bits: "Status register: 0x00"
+1625464-1625485 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1674991-1675012 spiflash: dsry: "Command: Write enable"
+1679819-1679840 spiflash: be: "Command: Page program"
+1679882-1679901 spiflash: bits: "Page address: 0x017100"
+1679902-1685236 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+1685942-1685961 spiflash: read: "Command: Read status register"
+1685967-1685986 spiflash: bits: "Status register: 0x03"
+1685967-1685986 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1685988-1686007 spiflash: bits: "Status register: 0x03"
+1685988-1686007 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1725516-1725535 spiflash: read: "Command: Read status register"
+1725541-1725560 spiflash: bits: "Status register: 0x00"
+1725541-1725560 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1725561-1725582 spiflash: bits: "Status register: 0x00"
+1725561-1725582 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1779688-1779707 spiflash: dsry: "Command: Write enable"
+1780950-1780969 spiflash: be: "Command: Page program"
+1781012-1781033 spiflash: bits: "Page address: 0x017200"
+1781033-1786367 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+1787089-1787110 spiflash: read: "Command: Read status register"
+1787114-1787135 spiflash: bits: "Status register: 0x03"
+1787114-1787135 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1787135-1787154 spiflash: bits: "Status register: 0x03"
+1787135-1787154 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1825502-1825523 spiflash: read: "Command: Read status register"
+1825527-1825548 spiflash: bits: "Status register: 0x00"
+1825527-1825548 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1825548-1825569 spiflash: bits: "Status register: 0x00"
+1825548-1825569 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1874676-1874697 spiflash: dsry: "Command: Write enable"
+1879748-1879769 spiflash: be: "Command: Page program"
+1879811-1879830 spiflash: bits: "Page address: 0x017300"
+1879832-1885165 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+1885913-1885934 spiflash: read: "Command: Read status register"
+1885938-1885959 spiflash: bits: "Status register: 0x03"
+1885938-1885959 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1885959-1885980 spiflash: bits: "Status register: 0x03"
+1885959-1885980 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1925483-1925502 spiflash: read: "Command: Read status register"
+1925508-1925527 spiflash: bits: "Status register: 0x00"
+1925508-1925527 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1925528-1925549 spiflash: bits: "Status register: 0x00"
+1925528-1925549 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1979667-1979688 spiflash: dsry: "Command: Write enable"
+1980788-1980809 spiflash: be: "Command: Page program"
+1980851-1980870 spiflash: bits: "Page address: 0x017400"
+1980871-1986205 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+1987066-1987085 spiflash: read: "Command: Read status register"
+1987091-1987110 spiflash: bits: "Status register: 0x03"
+1987091-1987110 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+1987112-1987131 spiflash: bits: "Status register: 0x03"
+1987112-1987131 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2025473-2025492 spiflash: read: "Command: Read status register"
+2025498-2025517 spiflash: bits: "Status register: 0x00"
+2025498-2025517 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2025518-2025539 spiflash: bits: "Status register: 0x00"
+2025518-2025539 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2074937-2074958 spiflash: dsry: "Command: Write enable"
+2079741-2079762 spiflash: be: "Command: Page program"
+2079804-2079823 spiflash: bits: "Page address: 0x017500"
+2079825-2085158 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+2085888-2085909 spiflash: read: "Command: Read status register"
+2085913-2085934 spiflash: bits: "Status register: 0x03"
+2085913-2085934 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2085934-2085955 spiflash: bits: "Status register: 0x03"
+2085934-2085955 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2125468-2125487 spiflash: read: "Command: Read status register"
+2125493-2125512 spiflash: bits: "Status register: 0x00"
+2125493-2125512 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2125514-2125533 spiflash: bits: "Status register: 0x00"
+2125514-2125533 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2174536-2174557 spiflash: dsry: "Command: Write enable"
+2179636-2179657 spiflash: be: "Command: Page program"
+2179699-2179718 spiflash: bits: "Page address: 0x017600"
+2179719-2185053 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+2185872-2185891 spiflash: read: "Command: Read status register"
+2185897-2185916 spiflash: bits: "Status register: 0x03"
+2185897-2185916 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2185918-2185937 spiflash: bits: "Status register: 0x03"
+2185918-2185937 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2230250-2230271 spiflash: read: "Command: Read status register"
+2230275-2230296 spiflash: bits: "Status register: 0x00"
+2230275-2230296 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2230296-2230317 spiflash: bits: "Status register: 0x00"
+2230296-2230317 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2274526-2274545 spiflash: dsry: "Command: Write enable"
+2279738-2279759 spiflash: be: "Command: Page program"
+2279801-2279820 spiflash: bits: "Page address: 0x017700"
+2279822-2285155 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+2285865-2285884 spiflash: read: "Command: Read status register"
+2285890-2285909 spiflash: bits: "Status register: 0x03"
+2285890-2285909 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2285911-2285930 spiflash: bits: "Status register: 0x03"
+2285911-2285930 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2356730-2356749 spiflash: read: "Command: Read status register"
+2356755-2356774 spiflash: bits: "Status register: 0x00"
+2356755-2356774 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2356775-2356796 spiflash: bits: "Status register: 0x00"
+2356775-2356796 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2387394-2387415 spiflash: dsry: "Command: Write enable"
+2392215-2392234 spiflash: be: "Command: Page program"
+2392277-2392298 spiflash: bits: "Page address: 0x017800"
+2392298-2397632 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+2398222-2398241 spiflash: read: "Command: Read status register"
+2398247-2398266 spiflash: bits: "Status register: 0x03"
+2398247-2398266 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2398267-2398288 spiflash: bits: "Status register: 0x03"
+2398267-2398288 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2429571-2429592 spiflash: read: "Command: Read status register"
+2429596-2429617 spiflash: bits: "Status register: 0x00"
+2429596-2429617 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2429617-2429638 spiflash: bits: "Status register: 0x00"
+2429617-2429638 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2474901-2474922 spiflash: dsry: "Command: Write enable"
+2479301-2479320 spiflash: be: "Command: Page program"
+2479363-2479384 spiflash: bits: "Page address: 0x017900"
+2479384-2484717 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+2485831-2485852 spiflash: read: "Command: Read status register"
+2485856-2485877 spiflash: bits: "Status register: 0x03"
+2485856-2485877 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2485877-2485898 spiflash: bits: "Status register: 0x03"
+2485877-2485898 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2530074-2530095 spiflash: read: "Command: Read status register"
+2530099-2530118 spiflash: bits: "Status register: 0x00"
+2530099-2530118 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2530120-2530139 spiflash: bits: "Status register: 0x00"
+2530120-2530139 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2579561-2579580 spiflash: dsry: "Command: Write enable"
+2580708-2580729 spiflash: be: "Command: Page program"
+2580771-2580790 spiflash: bits: "Page address: 0x017a00"
+2580792-2586125 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+2586843-2586864 spiflash: read: "Command: Read status register"
+2586868-2586889 spiflash: bits: "Status register: 0x03"
+2586868-2586889 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2586889-2586908 spiflash: bits: "Status register: 0x03"
+2586889-2586908 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2630058-2630079 spiflash: read: "Command: Read status register"
+2630083-2630104 spiflash: bits: "Status register: 0x00"
+2630083-2630104 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2630104-2630125 spiflash: bits: "Status register: 0x00"
+2630104-2630125 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2674856-2674877 spiflash: dsry: "Command: Write enable"
+2679689-2679708 spiflash: be: "Command: Page program"
+2679751-2679772 spiflash: bits: "Page address: 0x017b00"
+2679772-2685106 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+2685805-2685824 spiflash: read: "Command: Read status register"
+2685830-2685849 spiflash: bits: "Status register: 0x03"
+2685830-2685849 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2685850-2685871 spiflash: bits: "Status register: 0x03"
+2685850-2685871 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2730569-2730588 spiflash: read: "Command: Read status register"
+2730594-2730613 spiflash: bits: "Status register: 0x00"
+2730594-2730613 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2730614-2730635 spiflash: bits: "Status register: 0x00"
+2730614-2730635 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2774844-2774863 spiflash: dsry: "Command: Write enable"
+2779652-2779673 spiflash: be: "Command: Page program"
+2779715-2779734 spiflash: bits: "Page address: 0x017c00"
+2779735-2785069 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+2785784-2785805 spiflash: read: "Command: Read status register"
+2785809-2785830 spiflash: bits: "Status register: 0x03"
+2785809-2785830 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2785830-2785851 spiflash: bits: "Status register: 0x03"
+2785830-2785851 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2830553-2830572 spiflash: read: "Command: Read status register"
+2830578-2830597 spiflash: bits: "Status register: 0x00"
+2830578-2830597 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2830598-2830619 spiflash: bits: "Status register: 0x00"
+2830598-2830619 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2874827-2874848 spiflash: dsry: "Command: Write enable"
+2879643-2879664 spiflash: be: "Command: Page program"
+2879706-2879725 spiflash: bits: "Page address: 0x017d00"
+2879726-2885060 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+2885788-2885809 spiflash: read: "Command: Read status register"
+2885813-2885834 spiflash: bits: "Status register: 0x03"
+2885813-2885834 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2885834-2885853 spiflash: bits: "Status register: 0x03"
+2885834-2885853 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2930022-2930043 spiflash: read: "Command: Read status register"
+2930047-2930068 spiflash: bits: "Status register: 0x00"
+2930047-2930068 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2930068-2930087 spiflash: bits: "Status register: 0x00"
+2930068-2930087 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2976008-2976029 spiflash: dsry: "Command: Write enable"
+2977946-2977965 spiflash: be: "Command: Page program"
+2978008-2978029 spiflash: bits: "Page address: 0x017e00"
+2978029-2983363 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+2984184-2984203 spiflash: read: "Command: Read status register"
+2984209-2984228 spiflash: bits: "Status register: 0x03"
+2984209-2984228 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+2984230-2984249 spiflash: bits: "Status register: 0x03"
+2984230-2984249 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3025330-3025351 spiflash: read: "Command: Read status register"
+3025355-3025376 spiflash: bits: "Status register: 0x00"
+3025355-3025376 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3025376-3025397 spiflash: bits: "Status register: 0x00"
+3025376-3025397 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3079515-3079534 spiflash: dsry: "Command: Write enable"
+3080640-3080661 spiflash: be: "Command: Page program"
+3080703-3080722 spiflash: bits: "Page address: 0x017f00"
+3080724-3086057 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+3086919-3086940 spiflash: read: "Command: Read status register"
+3086944-3086965 spiflash: bits: "Status register: 0x03"
+3086944-3086965 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3086965-3086986 spiflash: bits: "Status register: 0x03"
+3086965-3086986 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3125334-3125353 spiflash: read: "Command: Read status register"
+3125359-3125378 spiflash: bits: "Status register: 0x00"
+3125359-3125378 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3125380-3125399 spiflash: bits: "Status register: 0x00"
+3125380-3125399 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3178059-3178080 spiflash: dsry: "Command: Write enable"
+3183137-3183158 spiflash: be: "Command: Page program"
+3183200-3183219 spiflash: bits: "Page address: 0x018000"
+3183220-3189060 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+3190417-3190436 spiflash: read: "Command: Read status register"
+3190442-3190461 spiflash: bits: "Status register: 0x03"
+3190442-3190461 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3190462-3190483 spiflash: bits: "Status register: 0x03"
+3190462-3190483 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3230112-3230131 spiflash: read: "Command: Read status register"
+3230137-3230156 spiflash: bits: "Status register: 0x00"
+3230137-3230156 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3230158-3230177 spiflash: bits: "Status register: 0x00"
+3230158-3230177 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3274767-3274786 spiflash: dsry: "Command: Write enable"
+3279585-3279604 spiflash: be: "Command: Page program"
+3279647-3279668 spiflash: bits: "Page address: 0x018100"
+3279668-3285002 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+3285712-3285731 spiflash: read: "Command: Read status register"
+3285737-3285756 spiflash: bits: "Status register: 0x03"
+3285737-3285756 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3285758-3285777 spiflash: bits: "Status register: 0x03"
+3285758-3285777 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3325298-3325317 spiflash: read: "Command: Read status register"
+3325323-3325342 spiflash: bits: "Status register: 0x00"
+3325323-3325342 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3325343-3325364 spiflash: bits: "Status register: 0x00"
+3325343-3325364 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3374877-3374896 spiflash: dsry: "Command: Write enable"
+3379573-3379592 spiflash: be: "Command: Page program"
+3379635-3379656 spiflash: bits: "Page address: 0x018200"
+3379656-3384990 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+3385713-3385734 spiflash: read: "Command: Read status register"
+3385738-3385759 spiflash: bits: "Status register: 0x03"
+3385738-3385759 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3385759-3385780 spiflash: bits: "Status register: 0x03"
+3385759-3385780 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3425281-3425300 spiflash: read: "Command: Read status register"
+3425306-3425325 spiflash: bits: "Status register: 0x00"
+3425306-3425325 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3425327-3425346 spiflash: bits: "Status register: 0x00"
+3425327-3425346 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3479446-3479465 spiflash: dsry: "Command: Write enable"
+3480720-3480739 spiflash: be: "Command: Page program"
+3480782-3480803 spiflash: bits: "Page address: 0x018300"
+3480803-3486137 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+3486863-3486882 spiflash: read: "Command: Read status register"
+3486888-3486907 spiflash: bits: "Status register: 0x03"
+3486888-3486907 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3486909-3486928 spiflash: bits: "Status register: 0x03"
+3486909-3486928 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3525265-3525286 spiflash: read: "Command: Read status register"
+3525290-3525311 spiflash: bits: "Status register: 0x00"
+3525290-3525311 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3525311-3525332 spiflash: bits: "Status register: 0x00"
+3525311-3525332 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3574741-3574760 spiflash: dsry: "Command: Write enable"
+3579545-3579566 spiflash: be: "Command: Page program"
+3579608-3579627 spiflash: bits: "Page address: 0x018400"
+3579629-3584962 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+3585674-3585695 spiflash: read: "Command: Read status register"
+3585699-3585720 spiflash: bits: "Status register: 0x03"
+3585699-3585720 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3585720-3585741 spiflash: bits: "Status register: 0x03"
+3585720-3585741 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3630452-3630471 spiflash: read: "Command: Read status register"
+3630477-3630496 spiflash: bits: "Status register: 0x00"
+3630477-3630496 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3630497-3630518 spiflash: bits: "Status register: 0x00"
+3630497-3630518 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3674336-3674357 spiflash: dsry: "Command: Write enable"
+3679541-3679560 spiflash: be: "Command: Page program"
+3679603-3679624 spiflash: bits: "Page address: 0x018500"
+3679624-3684958 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+3685697-3685716 spiflash: read: "Command: Read status register"
+3685722-3685741 spiflash: bits: "Status register: 0x03"
+3685722-3685741 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3685742-3685763 spiflash: bits: "Status register: 0x03"
+3685742-3685763 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3725246-3725267 spiflash: read: "Command: Read status register"
+3725271-3725292 spiflash: bits: "Status register: 0x00"
+3725271-3725292 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3725292-3725311 spiflash: bits: "Status register: 0x00"
+3725292-3725311 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3774715-3774736 spiflash: dsry: "Command: Write enable"
+3779523-3779542 spiflash: be: "Command: Page program"
+3779585-3779606 spiflash: bits: "Page address: 0x018600"
+3779606-3784940 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+3784954-3784975 spiflash: read: "Command: Read status register"
+3784979-3785000 spiflash: bits: "Status register: 0x03"
+3784979-3785000 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3785000-3785021 spiflash: bits: "Status register: 0x03"
+3785000-3785021 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3825313-3825332 spiflash: read: "Command: Read status register"
+3825338-3825357 spiflash: bits: "Status register: 0x00"
+3825338-3825357 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3825359-3825378 spiflash: bits: "Status register: 0x00"
+3825359-3825378 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3874701-3874720 spiflash: dsry: "Command: Write enable"
+3879113-3879132 spiflash: be: "Command: Page program"
+3879175-3879196 spiflash: bits: "Page address: 0x018700"
+3879196-3884530 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+3885641-3885662 spiflash: read: "Command: Read status register"
+3885666-3885687 spiflash: bits: "Status register: 0x03"
+3885666-3885687 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3885687-3885708 spiflash: bits: "Status register: 0x03"
+3885687-3885708 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3930025-3930044 spiflash: read: "Command: Read status register"
+3930050-3930069 spiflash: bits: "Status register: 0x00"
+3930050-3930069 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3930071-3930090 spiflash: bits: "Status register: 0x00"
+3930071-3930090 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3974690-3974709 spiflash: dsry: "Command: Write enable"
+3979492-3979513 spiflash: be: "Command: Page program"
+3979555-3979574 spiflash: bits: "Page address: 0x018800"
+3979575-3984909 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+3985623-3985642 spiflash: read: "Command: Read status register"
+3985648-3985667 spiflash: bits: "Status register: 0x03"
+3985648-3985667 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+3985669-3985688 spiflash: bits: "Status register: 0x03"
+3985669-3985688 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4029872-4029893 spiflash: read: "Command: Read status register"
+4029897-4029918 spiflash: bits: "Status register: 0x00"
+4029897-4029918 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4029918-4029937 spiflash: bits: "Status register: 0x00"
+4029918-4029937 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4074670-4074689 spiflash: dsry: "Command: Write enable"
+4079478-4079499 spiflash: be: "Command: Page program"
+4079541-4079560 spiflash: bits: "Page address: 0x018900"
+4079561-4084895 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+4085601-4085622 spiflash: read: "Command: Read status register"
+4085626-4085647 spiflash: bits: "Status register: 0x03"
+4085626-4085647 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4085647-4085668 spiflash: bits: "Status register: 0x03"
+4085647-4085668 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4129996-4130015 spiflash: read: "Command: Read status register"
+4130021-4130040 spiflash: bits: "Status register: 0x00"
+4130021-4130040 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4130042-4130061 spiflash: bits: "Status register: 0x00"
+4130042-4130061 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4174670-4174689 spiflash: dsry: "Command: Write enable"
+4179463-4179482 spiflash: be: "Command: Page program"
+4179525-4179546 spiflash: bits: "Page address: 0x018a00"
+4179546-4184880 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+4185584-4185603 spiflash: read: "Command: Read status register"
+4185609-4185628 spiflash: bits: "Status register: 0x03"
+4185609-4185628 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4185629-4185650 spiflash: bits: "Status register: 0x03"
+4185629-4185650 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4230365-4230384 spiflash: read: "Command: Read status register"
+4230390-4230409 spiflash: bits: "Status register: 0x00"
+4230390-4230409 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4230410-4230430 spiflash: bits: "Status register: 0x00"
+4230410-4230430 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4274637-4274656 spiflash: dsry: "Command: Write enable"
+4279078-4279097 spiflash: be: "Command: Page program"
+4279140-4279161 spiflash: bits: "Page address: 0x018b00"
+4279161-4284495 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+4285583-4285602 spiflash: read: "Command: Read status register"
+4285608-4285627 spiflash: bits: "Status register: 0x03"
+4285608-4285627 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4285628-4285649 spiflash: bits: "Status register: 0x03"
+4285628-4285649 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4325155-4325176 spiflash: read: "Command: Read status register"
+4325180-4325201 spiflash: bits: "Status register: 0x00"
+4325180-4325201 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4325201-4325220 spiflash: bits: "Status register: 0x00"
+4325201-4325220 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4379316-4379335 spiflash: dsry: "Command: Write enable"
+4380460-4380479 spiflash: be: "Command: Page program"
+4380522-4380543 spiflash: bits: "Page address: 0x018c00"
+4380543-4385877 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+4386738-4386757 spiflash: read: "Command: Read status register"
+4386763-4386782 spiflash: bits: "Status register: 0x03"
+4386763-4386782 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4386784-4386803 spiflash: bits: "Status register: 0x03"
+4386784-4386803 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4425137-4425158 spiflash: read: "Command: Read status register"
+4425162-4425183 spiflash: bits: "Status register: 0x00"
+4425162-4425183 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4425183-4425204 spiflash: bits: "Status register: 0x00"
+4425183-4425204 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4474610-4474629 spiflash: dsry: "Command: Write enable"
+4479426-4479447 spiflash: be: "Command: Page program"
+4479489-4479508 spiflash: bits: "Page address: 0x018d00"
+4479509-4484843 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+4485563-4485584 spiflash: read: "Command: Read status register"
+4485588-4485609 spiflash: bits: "Status register: 0x03"
+4485588-4485609 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4485609-4485630 spiflash: bits: "Status register: 0x03"
+4485609-4485630 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4529940-4529959 spiflash: read: "Command: Read status register"
+4529965-4529984 spiflash: bits: "Status register: 0x00"
+4529965-4529984 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4529985-4530006 spiflash: bits: "Status register: 0x00"
+4529985-4530006 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4574496-4574517 spiflash: dsry: "Command: Write enable"
+4579413-4579432 spiflash: be: "Command: Page program"
+4579475-4579496 spiflash: bits: "Page address: 0x018e00"
+4579496-4584830 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+4585545-4585564 spiflash: read: "Command: Read status register"
+4585570-4585589 spiflash: bits: "Status register: 0x03"
+4585570-4585589 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4585591-4585610 spiflash: bits: "Status register: 0x03"
+4585591-4585610 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4625109-4625128 spiflash: read: "Command: Read status register"
+4625134-4625153 spiflash: bits: "Status register: 0x00"
+4625134-4625153 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4625154-4625175 spiflash: bits: "Status register: 0x00"
+4625154-4625175 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4677707-4677728 spiflash: dsry: "Command: Write enable"
+4682601-4682620 spiflash: be: "Command: Page program"
+4682663-4682684 spiflash: bits: "Page address: 0x018f00"
+4682684-4688018 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+4688667-4688688 spiflash: read: "Command: Read status register"
+4688692-4688713 spiflash: bits: "Status register: 0x03"
+4688692-4688713 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4688713-4688734 spiflash: bits: "Status register: 0x03"
+4688713-4688734 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4726654-4726675 spiflash: read: "Command: Read status register"
+4726679-4726700 spiflash: bits: "Status register: 0x00"
+4726679-4726700 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4726700-4726721 spiflash: bits: "Status register: 0x00"
+4726700-4726721 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4775103-4775122 spiflash: dsry: "Command: Write enable"
+4778845-4778866 spiflash: be: "Command: Page program"
+4778908-4778927 spiflash: bits: "Page address: 0x019000"
+4778928-4784262 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+4785510-4785529 spiflash: read: "Command: Read status register"
+4785535-4785554 spiflash: bits: "Status register: 0x03"
+4785535-4785554 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4785556-4785575 spiflash: bits: "Status register: 0x03"
+4785556-4785575 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4830296-4830315 spiflash: read: "Command: Read status register"
+4830321-4830340 spiflash: bits: "Status register: 0x00"
+4830321-4830340 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4830341-4830362 spiflash: bits: "Status register: 0x00"
+4830341-4830362 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4879270-4879289 spiflash: dsry: "Command: Write enable"
+4880500-4880520 spiflash: be: "Command: Page program"
+4880562-4880583 spiflash: bits: "Page address: 0x019100"
+4880583-4885916 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+4886675-4886694 spiflash: read: "Command: Read status register"
+4886700-4886719 spiflash: bits: "Status register: 0x03"
+4886700-4886719 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4886721-4886740 spiflash: bits: "Status register: 0x03"
+4886721-4886740 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4925091-4925112 spiflash: read: "Command: Read status register"
+4925116-4925137 spiflash: bits: "Status register: 0x00"
+4925116-4925137 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4925137-4925156 spiflash: bits: "Status register: 0x00"
+4925137-4925156 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4974546-4974567 spiflash: dsry: "Command: Write enable"
+4978438-4978459 spiflash: be: "Command: Page program"
+4978501-4978520 spiflash: bits: "Page address: 0x019200"
+4978521-4983855 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+4983870-4983889 spiflash: read: "Command: Read status register"
+4983895-4983914 spiflash: bits: "Status register: 0x03"
+4983895-4983914 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+4983916-4983936 spiflash: bits: "Status register: 0x03"
+4983916-4983936 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5029741-5029762 spiflash: read: "Command: Read status register"
+5029766-5029787 spiflash: bits: "Status register: 0x00"
+5029766-5029787 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5029787-5029806 spiflash: bits: "Status register: 0x00"
+5029787-5029806 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5074528-5074549 spiflash: dsry: "Command: Write enable"
+5079343-5079362 spiflash: be: "Command: Page program"
+5079405-5079426 spiflash: bits: "Page address: 0x019300"
+5079426-5084760 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+5085472-5085491 spiflash: read: "Command: Read status register"
+5085497-5085516 spiflash: bits: "Status register: 0x03"
+5085497-5085516 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5085518-5085537 spiflash: bits: "Status register: 0x03"
+5085518-5085537 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5124945-5124966 spiflash: read: "Command: Read status register"
+5124970-5124991 spiflash: bits: "Status register: 0x00"
+5124970-5124991 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5124991-5125012 spiflash: bits: "Status register: 0x00"
+5124991-5125012 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5174618-5174639 spiflash: dsry: "Command: Write enable"
+5179319-5179340 spiflash: be: "Command: Page program"
+5179382-5179402 spiflash: bits: "Page address: 0x019400"
+5179402-5184736 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+5185459-5185478 spiflash: read: "Command: Read status register"
+5185484-5185503 spiflash: bits: "Status register: 0x03"
+5185484-5185503 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5185505-5185524 spiflash: bits: "Status register: 0x03"
+5185505-5185524 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5225172-5225191 spiflash: read: "Command: Read status register"
+5225197-5225216 spiflash: bits: "Status register: 0x00"
+5225197-5225216 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5225218-5225237 spiflash: bits: "Status register: 0x00"
+5225218-5225237 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5274604-5274625 spiflash: dsry: "Command: Write enable"
+5279324-5279343 spiflash: be: "Command: Page program"
+5279386-5279407 spiflash: bits: "Page address: 0x019500"
+5279407-5284741 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+5285448-5285469 spiflash: read: "Command: Read status register"
+5285473-5285494 spiflash: bits: "Status register: 0x03"
+5285473-5285494 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5285494-5285515 spiflash: bits: "Status register: 0x03"
+5285494-5285515 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5325554-5325575 spiflash: read: "Command: Read status register"
+5325579-5325600 spiflash: bits: "Status register: 0x00"
+5325579-5325600 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5325600-5325621 spiflash: bits: "Status register: 0x00"
+5325600-5325621 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5374609-5374630 spiflash: dsry: "Command: Write enable"
+5378937-5378956 spiflash: be: "Command: Page program"
+5378999-5379020 spiflash: bits: "Page address: 0x019600"
+5379020-5384354 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+5385446-5385467 spiflash: read: "Command: Read status register"
+5385471-5385492 spiflash: bits: "Status register: 0x03"
+5385471-5385492 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5385492-5385513 spiflash: bits: "Status register: 0x03"
+5385492-5385513 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5425269-5425290 spiflash: read: "Command: Read status register"
+5425294-5425315 spiflash: bits: "Status register: 0x00"
+5425294-5425315 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5425315-5425336 spiflash: bits: "Status register: 0x00"
+5425315-5425336 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5474586-5474607 spiflash: dsry: "Command: Write enable"
+5478919-5478940 spiflash: be: "Command: Page program"
+5478982-5479001 spiflash: bits: "Page address: 0x019700"
+5479003-5484336 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+5485428-5485447 spiflash: read: "Command: Read status register"
+5485453-5485472 spiflash: bits: "Status register: 0x03"
+5485453-5485472 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5485474-5485493 spiflash: bits: "Status register: 0x03"
+5485474-5485493 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5525526-5525547 spiflash: read: "Command: Read status register"
+5525551-5525572 spiflash: bits: "Status register: 0x00"
+5525551-5525572 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5525572-5525591 spiflash: bits: "Status register: 0x00"
+5525572-5525591 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5574587-5574608 spiflash: dsry: "Command: Write enable"
+5579284-5579305 spiflash: be: "Command: Page program"
+5579347-5579366 spiflash: bits: "Page address: 0x019800"
+5579367-5584701 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+5585405-5585424 spiflash: read: "Command: Read status register"
+5585430-5585449 spiflash: bits: "Status register: 0x03"
+5585430-5585449 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5585451-5585470 spiflash: bits: "Status register: 0x03"
+5585451-5585470 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5625526-5625545 spiflash: read: "Command: Read status register"
+5625551-5625570 spiflash: bits: "Status register: 0x00"
+5625551-5625570 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5625571-5625592 spiflash: bits: "Status register: 0x00"
+5625571-5625592 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5674572-5674591 spiflash: dsry: "Command: Write enable"
+5679279-5679300 spiflash: be: "Command: Page program"
+5679342-5679361 spiflash: bits: "Page address: 0x019900"
+5679363-5684696 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+5685414-5685435 spiflash: read: "Command: Read status register"
+5685439-5685460 spiflash: bits: "Status register: 0x03"
+5685439-5685460 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5685460-5685481 spiflash: bits: "Status register: 0x03"
+5685460-5685481 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5725505-5725524 spiflash: read: "Command: Read status register"
+5725530-5725549 spiflash: bits: "Status register: 0x00"
+5725530-5725549 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5725551-5725570 spiflash: bits: "Status register: 0x00"
+5725551-5725570 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5777567-5777586 spiflash: dsry: "Command: Write enable"
+5781462-5781483 spiflash: be: "Command: Page program"
+5781525-5781544 spiflash: bits: "Page address: 0x019a00"
+5781545-5786879 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+5788503-5788524 spiflash: read: "Command: Read status register"
+5788528-5788549 spiflash: bits: "Status register: 0x03"
+5788528-5788549 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5788549-5788568 spiflash: bits: "Status register: 0x03"
+5788549-5788568 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5826506-5826525 spiflash: read: "Command: Read status register"
+5826531-5826550 spiflash: bits: "Status register: 0x00"
+5826531-5826550 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5826551-5826572 spiflash: bits: "Status register: 0x00"
+5826551-5826572 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5874428-5874447 spiflash: dsry: "Command: Write enable"
+5879249-5879268 spiflash: be: "Command: Page program"
+5879311-5879332 spiflash: bits: "Page address: 0x019b00"
+5879332-5884666 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+5885395-5885414 spiflash: read: "Command: Read status register"
+5885420-5885439 spiflash: bits: "Status register: 0x03"
+5885420-5885439 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5885440-5885461 spiflash: bits: "Status register: 0x03"
+5885440-5885461 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5930139-5930158 spiflash: read: "Command: Read status register"
+5930164-5930183 spiflash: bits: "Status register: 0x00"
+5930164-5930183 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5930184-5930205 spiflash: bits: "Status register: 0x00"
+5930184-5930205 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5974516-5974535 spiflash: dsry: "Command: Write enable"
+5979217-5979236 spiflash: be: "Command: Page program"
+5979279-5979300 spiflash: bits: "Page address: 0x019c00"
+5979300-5984634 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+5985356-5985377 spiflash: read: "Command: Read status register"
+5985381-5985402 spiflash: bits: "Status register: 0x03"
+5985381-5985402 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+5985402-5985421 spiflash: bits: "Status register: 0x03"
+5985402-5985421 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6030123-6030144 spiflash: read: "Command: Read status register"
+6030148-6030169 spiflash: bits: "Status register: 0x00"
+6030148-6030169 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6030169-6030188 spiflash: bits: "Status register: 0x00"
+6030169-6030188 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6077131-6077152 spiflash: dsry: "Command: Write enable"
+6082744-6082763 spiflash: be: "Command: Page program"
+6082806-6082827 spiflash: bits: "Page address: 0x019d00"
+6082827-6088681 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+6089646-6089667 spiflash: read: "Command: Read status register"
+6089671-6089692 spiflash: bits: "Status register: 0x03"
+6089671-6089692 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6089692-6089713 spiflash: bits: "Status register: 0x03"
+6089692-6089713 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6124923-6124942 spiflash: read: "Command: Read status register"
+6124948-6124967 spiflash: bits: "Status register: 0x00"
+6124948-6124967 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6124968-6124989 spiflash: bits: "Status register: 0x00"
+6124968-6124989 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6174395-6174416 spiflash: dsry: "Command: Write enable"
+6179198-6179217 spiflash: be: "Command: Page program"
+6179260-6179281 spiflash: bits: "Page address: 0x019e00"
+6179281-6184615 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+6185328-6185347 spiflash: read: "Command: Read status register"
+6185353-6185372 spiflash: bits: "Status register: 0x03"
+6185353-6185372 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6185374-6185393 spiflash: bits: "Status register: 0x03"
+6185374-6185393 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6224899-6224920 spiflash: read: "Command: Read status register"
+6224924-6224945 spiflash: bits: "Status register: 0x00"
+6224924-6224945 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6224945-6224966 spiflash: bits: "Status register: 0x00"
+6224945-6224966 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6274383-6274402 spiflash: dsry: "Command: Write enable"
+6279215-6279234 spiflash: be: "Command: Page program"
+6279277-6279298 spiflash: bits: "Page address: 0x019f00"
+6279298-6284631 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+6285342-6285361 spiflash: read: "Command: Read status register"
+6285367-6285386 spiflash: bits: "Status register: 0x03"
+6285367-6285386 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6285388-6285407 spiflash: bits: "Status register: 0x03"
+6285388-6285407 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6324791-6324810 spiflash: read: "Command: Read status register"
+6324816-6324835 spiflash: bits: "Status register: 0x00"
+6324816-6324835 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6324836-6324857 spiflash: bits: "Status register: 0x00"
+6324836-6324857 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6374898-6374919 spiflash: dsry: "Command: Write enable"
+6378656-6378677 spiflash: be: "Command: Page program"
+6378719-6378738 spiflash: bits: "Page address: 0x01a000"
+6378739-6384073 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+6385326-6385347 spiflash: read: "Command: Read status register"
+6385351-6385372 spiflash: bits: "Status register: 0x03"
+6385351-6385372 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6385372-6385393 spiflash: bits: "Status register: 0x03"
+6385372-6385393 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6424870-6424889 spiflash: read: "Command: Read status register"
+6424895-6424914 spiflash: bits: "Status register: 0x00"
+6424895-6424914 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6424915-6424936 spiflash: bits: "Status register: 0x00"
+6424915-6424936 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6474344-6474363 spiflash: dsry: "Command: Write enable"
+6479170-6479189 spiflash: be: "Command: Page program"
+6479232-6479253 spiflash: bits: "Page address: 0x01a100"
+6479253-6484587 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+6485294-6485313 spiflash: read: "Command: Read status register"
+6485319-6485338 spiflash: bits: "Status register: 0x03"
+6485319-6485338 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6485339-6485360 spiflash: bits: "Status register: 0x03"
+6485339-6485360 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6526938-6526959 spiflash: read: "Command: Read status register"
+6526963-6526984 spiflash: bits: "Status register: 0x00"
+6526963-6526984 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6526984-6527005 spiflash: bits: "Status register: 0x00"
+6526984-6527005 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6574447-6574466 spiflash: dsry: "Command: Write enable"
+6578737-6578758 spiflash: be: "Command: Page program"
+6578800-6578819 spiflash: bits: "Page address: 0x01a200"
+6578821-6584154 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+6585264-6585283 spiflash: read: "Command: Read status register"
+6585289-6585308 spiflash: bits: "Status register: 0x03"
+6585289-6585308 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6585310-6585329 spiflash: bits: "Status register: 0x03"
+6585310-6585329 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6624844-6624865 spiflash: read: "Command: Read status register"
+6624869-6624890 spiflash: bits: "Status register: 0x00"
+6624869-6624890 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6624890-6624909 spiflash: bits: "Status register: 0x00"
+6624890-6624909 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6674271-6674292 spiflash: dsry: "Command: Write enable"
+6678741-6678760 spiflash: be: "Command: Page program"
+6678803-6678824 spiflash: bits: "Page address: 0x01a300"
+6678824-6684158 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+6685253-6685274 spiflash: read: "Command: Read status register"
+6685278-6685299 spiflash: bits: "Status register: 0x03"
+6685278-6685299 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6685299-6685320 spiflash: bits: "Status register: 0x03"
+6685299-6685320 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6724970-6724991 spiflash: read: "Command: Read status register"
+6724995-6725016 spiflash: bits: "Status register: 0x00"
+6724995-6725016 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6725016-6725037 spiflash: bits: "Status register: 0x00"
+6725016-6725037 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6774307-6774328 spiflash: dsry: "Command: Write enable"
+6779108-6779127 spiflash: be: "Command: Page program"
+6779170-6779191 spiflash: bits: "Page address: 0x01a400"
+6779191-6784525 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+6785245-6785266 spiflash: read: "Command: Read status register"
+6785270-6785291 spiflash: bits: "Status register: 0x03"
+6785270-6785291 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6785291-6785310 spiflash: bits: "Status register: 0x03"
+6785291-6785310 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6824959-6824980 spiflash: read: "Command: Read status register"
+6824984-6825005 spiflash: bits: "Status register: 0x00"
+6824984-6825005 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6825005-6825026 spiflash: bits: "Status register: 0x00"
+6825005-6825026 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6874011-6874030 spiflash: dsry: "Command: Write enable"
+6879063-6879084 spiflash: be: "Command: Page program"
+6879126-6879145 spiflash: bits: "Page address: 0x01a500"
+6879147-6884480 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+6885244-6885263 spiflash: read: "Command: Read status register"
+6885269-6885288 spiflash: bits: "Status register: 0x03"
+6885269-6885288 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6885290-6885309 spiflash: bits: "Status register: 0x03"
+6885290-6885309 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6925338-6925357 spiflash: read: "Command: Read status register"
+6925363-6925382 spiflash: bits: "Status register: 0x00"
+6925363-6925382 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6925384-6925403 spiflash: bits: "Status register: 0x00"
+6925384-6925403 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6977009-6977030 spiflash: dsry: "Command: Write enable"
+6982622-6982641 spiflash: be: "Command: Page program"
+6982684-6982705 spiflash: bits: "Page address: 0x01a600"
+6982705-6988543 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+6989514-6989535 spiflash: read: "Command: Read status register"
+6989539-6989560 spiflash: bits: "Status register: 0x03"
+6989539-6989560 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+6989560-6989581 spiflash: bits: "Status register: 0x03"
+6989560-6989581 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7024825-7024846 spiflash: read: "Command: Read status register"
+7024850-7024871 spiflash: bits: "Status register: 0x00"
+7024850-7024871 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7024871-7024890 spiflash: bits: "Status register: 0x00"
+7024871-7024890 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7074258-7074279 spiflash: dsry: "Command: Write enable"
+7078686-7078707 spiflash: be: "Command: Page program"
+7078749-7078768 spiflash: bits: "Page address: 0x01a700"
+7078770-7084103 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+7085219-7085238 spiflash: read: "Command: Read status register"
+7085244-7085263 spiflash: bits: "Status register: 0x03"
+7085244-7085263 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7085265-7085284 spiflash: bits: "Status register: 0x03"
+7085265-7085284 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7124917-7124936 spiflash: read: "Command: Read status register"
+7124942-7124961 spiflash: bits: "Status register: 0x00"
+7124942-7124961 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7124962-7124983 spiflash: bits: "Status register: 0x00"
+7124962-7124983 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7176988-7177007 spiflash: dsry: "Command: Write enable"
+7182595-7182614 spiflash: be: "Command: Page program"
+7182657-7182678 spiflash: bits: "Page address: 0x01a800"
+7182678-7188141 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+7189498-7189519 spiflash: read: "Command: Read status register"
+7189523-7189544 spiflash: bits: "Status register: 0x03"
+7189523-7189544 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7189544-7189565 spiflash: bits: "Status register: 0x03"
+7189544-7189565 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7224897-7224918 spiflash: read: "Command: Read status register"
+7224922-7224943 spiflash: bits: "Status register: 0x00"
+7224922-7224943 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7224943-7224964 spiflash: bits: "Status register: 0x00"
+7224943-7224964 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7274234-7274255 spiflash: dsry: "Command: Write enable"
+7279037-7279058 spiflash: be: "Command: Page program"
+7279100-7279119 spiflash: bits: "Page address: 0x01a900"
+7279121-7284454 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+7284665-7284686 spiflash: read: "Command: Read status register"
+7284690-7284711 spiflash: bits: "Status register: 0x03"
+7284690-7284711 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7284711-7284732 spiflash: bits: "Status register: 0x03"
+7284711-7284732 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7329950-7329969 spiflash: read: "Command: Read status register"
+7329975-7329994 spiflash: bits: "Status register: 0x00"
+7329975-7329994 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7329996-7330015 spiflash: bits: "Status register: 0x00"
+7329996-7330015 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7378929-7378948 spiflash: dsry: "Command: Write enable"
+7380058-7380077 spiflash: be: "Command: Page program"
+7380120-7380141 spiflash: bits: "Page address: 0x01aa00"
+7380141-7385474 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+7386332-7386353 spiflash: read: "Command: Read status register"
+7386357-7386378 spiflash: bits: "Status register: 0x03"
+7386357-7386378 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7386378-7386399 spiflash: bits: "Status register: 0x03"
+7386378-7386399 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7426291-7426312 spiflash: read: "Command: Read status register"
+7426316-7426337 spiflash: bits: "Status register: 0x00"
+7426316-7426337 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7426337-7426356 spiflash: bits: "Status register: 0x00"
+7426337-7426356 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7474209-7474230 spiflash: dsry: "Command: Write enable"
+7479010-7479029 spiflash: be: "Command: Page program"
+7479072-7479093 spiflash: bits: "Page address: 0x01ab00"
+7479093-7484427 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+7485158-7485177 spiflash: read: "Command: Read status register"
+7485183-7485202 spiflash: bits: "Status register: 0x03"
+7485183-7485202 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7485203-7485224 spiflash: bits: "Status register: 0x03"
+7485203-7485224 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7524865-7524884 spiflash: read: "Command: Read status register"
+7524890-7524909 spiflash: bits: "Status register: 0x00"
+7524890-7524909 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7524910-7524931 spiflash: bits: "Status register: 0x00"
+7524910-7524931 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7575895-7575914 spiflash: dsry: "Command: Write enable"
+7576908-7576929 spiflash: be: "Command: Page program"
+7576971-7576990 spiflash: bits: "Page address: 0x01ac00"
+7576991-7582325 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+7583181-7583202 spiflash: read: "Command: Read status register"
+7583206-7583227 spiflash: bits: "Status register: 0x03"
+7583206-7583227 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7583227-7583248 spiflash: bits: "Status register: 0x03"
+7583227-7583248 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7624926-7624947 spiflash: read: "Command: Read status register"
+7624951-7624972 spiflash: bits: "Status register: 0x00"
+7624951-7624972 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7624972-7624991 spiflash: bits: "Status register: 0x00"
+7624972-7624991 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7674324-7674345 spiflash: dsry: "Command: Write enable"
+7678469-7678490 spiflash: be: "Command: Page program"
+7678532-7678551 spiflash: bits: "Page address: 0x01ad00"
+7678553-7683886 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+7685118-7685139 spiflash: read: "Command: Read status register"
+7685143-7685164 spiflash: bits: "Status register: 0x03"
+7685143-7685164 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7685164-7685183 spiflash: bits: "Status register: 0x03"
+7685164-7685183 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7724702-7724723 spiflash: read: "Command: Read status register"
+7724727-7724748 spiflash: bits: "Status register: 0x00"
+7724727-7724748 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7724748-7724767 spiflash: bits: "Status register: 0x00"
+7724748-7724767 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7773895-7773916 spiflash: dsry: "Command: Write enable"
+7778529-7778550 spiflash: be: "Command: Page program"
+7778592-7778611 spiflash: bits: "Page address: 0x01ae00"
+7778613-7783946 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+7785096-7785117 spiflash: read: "Command: Read status register"
+7785121-7785142 spiflash: bits: "Status register: 0x03"
+7785121-7785142 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7785142-7785163 spiflash: bits: "Status register: 0x03"
+7785142-7785163 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7824697-7824716 spiflash: read: "Command: Read status register"
+7824722-7824741 spiflash: bits: "Status register: 0x00"
+7824722-7824741 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7824743-7824762 spiflash: bits: "Status register: 0x00"
+7824743-7824762 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7877297-7877318 spiflash: dsry: "Command: Write enable"
+7882501-7882522 spiflash: be: "Command: Page program"
+7882564-7882583 spiflash: bits: "Page address: 0x01af00"
+7882584-7888448 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+7889401-7889422 spiflash: read: "Command: Read status register"
+7889426-7889447 spiflash: bits: "Status register: 0x03"
+7889426-7889447 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7889447-7889468 spiflash: bits: "Status register: 0x03"
+7889447-7889468 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7924634-7924653 spiflash: read: "Command: Read status register"
+7924659-7924678 spiflash: bits: "Status register: 0x00"
+7924659-7924678 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7924680-7924699 spiflash: bits: "Status register: 0x00"
+7924680-7924699 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7974658-7974679 spiflash: dsry: "Command: Write enable"
+7978423-7978442 spiflash: be: "Command: Page program"
+7978485-7978506 spiflash: bits: "Page address: 0x01b000"
+7978506-7983840 spiflash: bits2: "Page data 256 bytes: lloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWor"
+7985088-7985107 spiflash: read: "Command: Read status register"
+7985113-7985132 spiflash: bits: "Status register: 0x03"
+7985113-7985132 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+7985133-7985154 spiflash: bits: "Status register: 0x03"
+7985133-7985154 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8029473-8029494 spiflash: read: "Command: Read status register"
+8029498-8029519 spiflash: bits: "Status register: 0x00"
+8029498-8029519 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8029519-8029540 spiflash: bits: "Status register: 0x00"
+8029519-8029540 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8076877-8076896 spiflash: dsry: "Command: Write enable"
+8082475-8082494 spiflash: be: "Command: Page program"
+8082537-8082558 spiflash: bits: "Page address: 0x01b100"
+8082558-8088413 spiflash: bits2: "Page data 256 bytes: ldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHell"
+8089374-8089393 spiflash: read: "Command: Read status register"
+8089399-8089418 spiflash: bits: "Status register: 0x03"
+8089399-8089418 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8089420-8089439 spiflash: bits: "Status register: 0x03"
+8089420-8089439 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8124656-8124677 spiflash: read: "Command: Read status register"
+8124681-8124702 spiflash: bits: "Status register: 0x00"
+8124681-8124702 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8124702-8124721 spiflash: bits: "Status register: 0x00"
+8124702-8124721 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8174120-8174139 spiflash: dsry: "Command: Write enable"
+8178539-8178560 spiflash: be: "Command: Page program"
+8178602-8178621 spiflash: bits: "Page address: 0x01b200"
+8178623-8183956 spiflash: bits2: "Page data 256 bytes: oWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld"
+8185059-8185080 spiflash: read: "Command: Read status register"
+8185084-8185105 spiflash: bits: "Status register: 0x03"
+8185084-8185105 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8185105-8185126 spiflash: bits: "Status register: 0x03"
+8185105-8185126 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8225156-8225177 spiflash: read: "Command: Read status register"
+8225181-8225202 spiflash: bits: "Status register: 0x00"
+8225181-8225202 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8225202-8225223 spiflash: bits: "Status register: 0x00"
+8225202-8225223 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8275789-8275808 spiflash: dsry: "Command: Write enable"
+8276960-8276981 spiflash: be: "Command: Page program"
+8277023-8277042 spiflash: bits: "Page address: 0x01b300"
+8277043-8282377 spiflash: bits2: "Page data 256 bytes: HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloW"
+8283094-8283115 spiflash: read: "Command: Read status register"
+8283119-8283140 spiflash: bits: "Status register: 0x03"
+8283119-8283140 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8283140-8283159 spiflash: bits: "Status register: 0x03"
+8283140-8283159 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8325154-8325175 spiflash: read: "Command: Read status register"
+8325179-8325200 spiflash: bits: "Status register: 0x00"
+8325179-8325200 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8325200-8325219 spiflash: bits: "Status register: 0x00"
+8325200-8325219 spiflash: bits2: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8375676-8375697 spiflash: dsry: "Command: Write enable"
+8376812-8376831 spiflash: be: "Command: Page program"
+8376874-8376895 spiflash: bits: "Page address: 0x01b400"
+8376895-8382229 spiflash: bits2: "Page data 256 bytes: orldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHe"
+8383075-8383096 spiflash: read: "Command: Read status register"
+8383100-8383121 spiflash: bits: "Status register: 0x03"
+8383100-8383121 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+8383121-8383142 spiflash: bits: "Status register: 0x03"
+8383121-8383142 spiflash: bits2: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
