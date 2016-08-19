@@ -1,0 +1,8 @@
+7-32 midi: text-verbose: "System realtime message: timing clock"
+44-69 midi: text-verbose: "System realtime message: undefined 0xf9"
+81-106 midi: text-verbose: "System realtime message: start"
+118-143 midi: text-verbose: "System realtime message: continue"
+155-180 midi: text-verbose: "System realtime message: stop"
+192-217 midi: text-verbose: "System realtime message: undefined 0xfd"
+229-254 midi: text-verbose: "System realtime message: active sensing"
+266-291 midi: text-verbose: "System realtime message: system reset"

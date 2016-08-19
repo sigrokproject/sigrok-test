@@ -1,0 +1,7 @@
+7-106 midi: text-verbose: "Channel 1: mode message 'all sound off' "
+118-216 midi: text-verbose: "Channel 1: mode message 'all sound off' (non-standard param value of 0x05)"
+229-328 midi: text-verbose: "Channel 2: mode message 'local control' off"
+340-439 midi: text-verbose: "Channel 2: mode message 'local control' on"
+451-551 midi: text-verbose: "Channel 2: mode message 'local control' (non-standard param value of 0x05)"
+562-661 midi: text-verbose: "Channel 3: mode message 'mono mode on' (5 channels)"
+673-772 midi: text-verbose: "Channel 3: mode message 'mono mode on' (channels 'basic' through 16)"

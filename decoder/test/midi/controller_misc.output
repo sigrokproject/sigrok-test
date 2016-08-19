@@ -1,0 +1,4 @@
+7-106 midi: text-verbose: "Channel 1: control function 'legato footswitch' = normal"
+118-217 midi: text-verbose: "Channel 1: control function 'legato footswitch' = legato"
+229-328 midi: text-verbose: "Channel 2: control function 'portamento control' (source note = 48 / C2)"
+340-439 midi: text-verbose: "Channel 3: control change to function 'undefined 0x29' (param = 0x05)"
