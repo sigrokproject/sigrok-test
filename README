@@ -44,6 +44,7 @@ In order to get the sigrok-test source code and build it, run:
 
  $ git clone git://sigrok.org/sigrok-test
  $ cd sigrok-test
+ $ ./autogen.sh
  $ PKG_CONFIG_PATH=$HOME/sr/lib/pkgconfig ./configure \
 	--with-decodersdir=/path/to/decoders
  $ make
