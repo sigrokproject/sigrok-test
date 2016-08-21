@@ -1,0 +1,8 @@
+45218-46338 ssi32: ctrl-tx: "> CTRL:0x43, LUN:0x09, SIZE:0x01, CRC:0x51, DATA:0x62"
+45218-46098 ssi32: ctrl-rx: "< CTRL:0x53, LUN:0xff, SIZE:0x00, CRC:0xae"
+79623-79783 ssi32: ack-tx: "> ACK:0xd0"
+79623-79783 ssi32: ack-rx: "< ACK:0xd0"
+937563-938443 ssi32: ctrl-tx: "> CTRL:0x53, LUN:0xff, SIZE:0x00, CRC:0xae"
+937563-938683 ssi32: ctrl-rx: "< CTRL:0x43, LUN:0x09, SIZE:0x01, CRC:0x50, DATA:0x63"
+971603-971763 ssi32: ack-tx: "> ACK:0xd0"
+971603-971763 ssi32: ack-rx: "< ACK:0xd0"
