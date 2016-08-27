@@ -1,4 +1,4 @@
-7-106 midi: text-verbose: "Channel 1: control function 'legato footswitch' = normal"
-118-217 midi: text-verbose: "Channel 1: control function 'legato footswitch' = legato"
-229-328 midi: text-verbose: "Channel 2: control function 'portamento control' (source note = 48 / C2)"
-340-439 midi: text-verbose: "Channel 3: control change to function 'undefined 0x29' (param = 0x05)"
+7-106 midi: text-verbose: "Channel 1: control change 'legato footswitch' = normal" "ch 1: ctrl chg 'legato switch' = normal" "1: CC 'legato' = no"
+118-217 midi: text-verbose: "Channel 1: control change 'legato footswitch' = legato" "ch 1: ctrl chg 'legato switch' = legato" "1: CC 'legato' = yes"
+229-328 midi: text-verbose: "Channel 2: control change 'portamento control' (source note = 48 / C2)" "ch 2: ctrl chg 'portamento ctrl' (source note = 48)" "2: CC 'porta ctrl' (src N 48)"
+340-439 midi: text-verbose: "Channel 3: control change 'undefined 0x29' (param = 0x05)" "ch 3: ctrl chg 'undef 0x29' (param = 0x05)" "3: CC '0x29' is 0x05"
