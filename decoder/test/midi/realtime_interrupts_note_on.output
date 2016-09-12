@@ -1,0 +1,3 @@
+44-69 midi: text-sysreal-verbose: "System Realtime: timing clock" "SysReal: timing clock" "SR: clock"
+118-143 midi: text-sysreal-verbose: "System Realtime: timing clock" "SysReal: timing clock" "SR: clock"
+7-180 midi: text-verbose: "Channel 1: note on (note = 60 'C4', velocity = 127)" "ch 1: note on 60, velocity = 127" "1: N on 60, vel 127"
