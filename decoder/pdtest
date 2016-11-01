@@ -55,17 +55,17 @@ def ERR(msg):
 def usage(msg=None):
     if msg:
         print(msg.strip() + '\n')
-    print("""Usage: testpd [-dvarslR] [test, ...]
+    print("""Usage: testpd [-dvalsrfcR] [<test1> <test2> ...]
   -d  Turn on debugging
   -v  Verbose
   -a  All tests
-  -l  List all tests
+  -l  List test(s)
   -s  Show test(s)
   -r  Run test(s)
   -f  Fix failed test(s)
   -c  Report decoder code coverage
   -R <directory>  Save test reports to <directory>
-  <test>  Protocol decoder name ("i2c") and optionally test name ("i2c/icc")""")
+  <test>  Protocol decoder name ("i2c") and optionally test name ("i2c/rtc")""")
     sys.exit()
 
 
