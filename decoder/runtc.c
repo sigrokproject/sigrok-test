@@ -279,12 +279,12 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 static void sr_cb(const struct sr_dev_inst *sdi,
 		const struct sr_datafeed_packet *packet, void *cb_data)
 {
+	static int samplecnt = 0;
 	const struct sr_datafeed_logic *logic;
 	struct srd_session *sess;
 	GVariant *gvar;
 	uint64_t samplerate;
 	int num_samples;
-	static int samplecnt = 0;
 	struct sr_dev_driver *driver;
 
 	sess = cb_data;
@@ -318,7 +318,7 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 			logic->length, logic->unitsize);
 		srd_session_send(sess, samplecnt, samplecnt + num_samples,
 				logic->data, logic->length, logic->unitsize);
-		samplecnt += logic->length / logic->unitsize;
+		samplecnt += num_samples;
 		break;
 	case SR_DF_END:
 		DBG("Received SR_DF_END");
