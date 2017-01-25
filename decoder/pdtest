@@ -571,8 +571,12 @@ try:
             ERR("Could not find sigrok-dumps repository at %s" % dumps_dir)
             sys.exit(1)
         results, errors = run_tests(testlist, fix=opt_fix)
+        ret = 0
         errs, diffs = get_run_tests_error_diff_counts(results)
-        ret = errs or diffs or 0
+        if errs:
+            ret = 1
+        elif diffs:
+            ret = 2
     elif opt_show:
         show_tests(testlist)
     elif opt_list:
