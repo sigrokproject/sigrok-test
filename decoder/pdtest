@@ -436,6 +436,17 @@ def run_tests(tests, fix=False):
 
     return results, errors
 
+def get_run_tests_error_diff_counts(results):
+    """Get error and diff counters from run_tests() results."""
+    errs = 0
+    diffs = 0
+    for result in results:
+        if 'error' in result:
+            errs += 1
+        if 'diff' in result:
+            diffs += 1
+    return errs, diffs
+
 
 def gen_report(result):
     out = []
@@ -560,7 +571,8 @@ try:
             ERR("Could not find sigrok-dumps repository at %s" % dumps_dir)
             sys.exit(1)
         results, errors = run_tests(testlist, fix=opt_fix)
-        ret = errors
+        errs, diffs = get_run_tests_error_diff_counts(results)
+        ret = errs or diffs or 0
     elif opt_show:
         show_tests(testlist)
     elif opt_list:
