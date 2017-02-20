@@ -174,12 +174,12 @@ static void srd_cb_py(struct srd_proto_data *pdata, void *cb_data)
 	GString *out;
 	char *s;
 
-	DBG("Python output from %s", pdata->pdo->di->inst_id);
+	DBG("Python output from %s", pdata->pdo->di->decoder->id);
 	op = cb_data;
 	pydata = pdata->data;
 	DBG("ptr %p", pydata);
 
-	if (strcmp(pdata->pdo->di->inst_id, op->pd))
+	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -194,7 +194,7 @@ static void srd_cb_py(struct srd_proto_data *pdata, void *cb_data)
 	out = g_string_sized_new(128);
 	g_string_printf(out, "%" PRIu64 "-%" PRIu64 " %s: %s\n",
 			pdata->start_sample, pdata->end_sample,
-			pdata->pdo->di->inst_id, s);
+			pdata->pdo->di->decoder->id, s);
 	g_free(s);
 	if (write(op->outfd, out->str, out->len) == -1)
 		ERR("SRD_OUTPUT_PYTHON callback write failure!");
@@ -210,11 +210,11 @@ static void srd_cb_bin(struct srd_proto_data *pdata, void *cb_data)
 	GString *out;
 	unsigned int i;
 
-	DBG("Binary output from %s", pdata->pdo->di->inst_id);
+	DBG("Binary output from %s", pdata->pdo->di->decoder->id);
 	op = cb_data;
 	pdb = pdata->data;
 
-	if (strcmp(pdata->pdo->di->inst_id, op->pd))
+	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -228,7 +228,7 @@ static void srd_cb_bin(struct srd_proto_data *pdata, void *cb_data)
 	out = g_string_sized_new(128);
 	g_string_printf(out, "%" PRIu64 "-%" PRIu64 " %s:",
 			pdata->start_sample, pdata->end_sample,
-			pdata->pdo->di->inst_id);
+			pdata->pdo->di->decoder->id);
 	for (i = 0; i < pdb->size; i++) {
 		g_string_append_printf(out, " %.2x", pdb->data[i]);
 	}
@@ -247,11 +247,11 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 	int i;
 	char **dec_ann;
 
-	DBG("Annotation output from %s", pdata->pdo->di->inst_id);
+	DBG("Annotation output from %s", pdata->pdo->di->decoder->id);
 	op = cb_data;
 	pda = pdata->data;
 	dec = pdata->pdo->di->decoder;
-	if (strcmp(pdata->pdo->di->inst_id, op->pd))
+	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -266,7 +266,7 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 	line = g_string_sized_new(256);
 	g_string_printf(line, "%" PRIu64 "-%" PRIu64 " %s: %s:",
 			pdata->start_sample, pdata->end_sample,
-			pdata->pdo->di->inst_id, dec_ann[0]);
+			pdata->pdo->di->decoder->id, dec_ann[0]);
 	for (i = 0; pda->ann_text[i]; i++)
 		g_string_append_printf(line, " \"%s\"", pda->ann_text[i]);
 	g_string_append(line, "\n");
