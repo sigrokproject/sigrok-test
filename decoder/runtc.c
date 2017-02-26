@@ -136,15 +136,16 @@ static void usage(const char *msg)
 	if (msg)
 		fprintf(stderr, "%s\n", msg);
 
-	printf("Usage: runtc [-dPpoiOf]\n");
-	printf("  -d  Debug\n");
-	printf("  -P  <protocol decoder>\n");
-	printf("  -p  <channelname=channelnum> (optional)\n");
-	printf("  -o  <channeloption=value> (optional)\n");
+	printf("Usage: runtc [-dPpoiOfcS]\n");
+	printf("  -d  (enables debug output)\n");
+	printf("  -P <protocol decoder>\n");
+	printf("  -p <channelname=channelnum> (optional)\n");
+	printf("  -o <channeloption=value> (optional)\n");
 	printf("  -i <input file>\n");
 	printf("  -O <output-pd:output-type[:output-class]>\n");
 	printf("  -f <output file> (optional)\n");
 	printf("  -c <coverage report> (optional)\n");
+	printf("  -S  (enables statistics)\n");
 	exit(msg ? 1 : 0);
 
 }
