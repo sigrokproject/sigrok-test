@@ -60,6 +60,7 @@ struct pd {
 
 struct output {
 	const char *pd;
+	const char *pd_id;
 	int type;
 	const char *class;
 	int class_idx;
@@ -168,6 +169,28 @@ static char *py_str_as_str(const PyObject *py_str)
 	return outstr;
 }
 
+/*
+ * The following routines are callbacks for libsigrokdecode. They receive
+ * output from protocol decoders, optionally dropping data to only forward
+ * a selected decoder's or class' information. Output is written to either
+ * a specified file or stdout, an external process will compare captured
+ * output against expectations.
+ *
+ * Note that runtc(1) output emits the decoder "class" name instead of the
+ * instance name. So that generated output remains compatible with existing
+ * .output files which hold expected output of test cases. Without this
+ * approach, developers had to "anticipate" instance names from test.conf
+ * setups (and knowledge about internal implementation details of the srd
+ * library), and adjust .output files to reflect those names. Or specify
+ * instance names in each and every test.conf description (-o inst_id=ID).
+ *
+ * It's assumed that runtc(1) is used to check stacked decoders, but not
+ * multiple stacks in parallel and no stacks with multiple instances of
+ * decoders of the same type. When such configurations become desirable,
+ * runtc(1) needs to emit the instance name, and test configurations and
+ * output expectations need adjustment.
+ */
+
 static void srd_cb_py(struct srd_proto_data *pdata, void *cb_data)
 {
 	struct output *op;
@@ -175,12 +198,12 @@ static void srd_cb_py(struct srd_proto_data *pdata, void *cb_data)
 	GString *out;
 	char *s;
 
-	DBG("Python output from %s", pdata->pdo->di->decoder->id);
+	DBG("Python output from %s", pdata->pdo->di->inst_id);
 	op = cb_data;
 	pydata = pdata->data;
 	DBG("ptr %p", pydata);
 
-	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
+	if (strcmp(pdata->pdo->di->inst_id, op->pd_id))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -191,7 +214,7 @@ static void srd_cb_py(struct srd_proto_data *pdata, void *cb_data)
 	s = py_str_as_str(pyrepr);
 	Py_DecRef(pyrepr);
 
-	/* Output format for testing is '<ss>-<es> <inst-id>: <repr>\n'. */
+	/* Output format for testing is '<ss>-<es> <decoder-id>: <repr>\n'. */
 	out = g_string_sized_new(128);
 	g_string_printf(out, "%" PRIu64 "-%" PRIu64 " %s: %s\n",
 			pdata->start_sample, pdata->end_sample,
@@ -211,11 +234,11 @@ static void srd_cb_bin(struct srd_proto_data *pdata, void *cb_data)
 	GString *out;
 	unsigned int i;
 
-	DBG("Binary output from %s", pdata->pdo->di->decoder->id);
+	DBG("Binary output from %s", pdata->pdo->di->inst_id);
 	op = cb_data;
 	pdb = pdata->data;
 
-	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
+	if (strcmp(pdata->pdo->di->inst_id, op->pd_id))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -241,6 +264,7 @@ static void srd_cb_bin(struct srd_proto_data *pdata, void *cb_data)
 
 static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 {
+	struct srd_decoder_inst *di;
 	struct srd_decoder *dec;
 	struct srd_proto_data_annotation *pda;
 	struct output *op;
@@ -248,11 +272,17 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 	int i;
 	char **dec_ann;
 
-	DBG("Annotation output from %s", pdata->pdo->di->decoder->id);
+	/*
+	 * Only inspect received annotations when they originate from
+	 * the selected protocol decoder, and an optionally specified
+	 * annotation class matches the received data.
+	 */
 	op = cb_data;
 	pda = pdata->data;
-	dec = pdata->pdo->di->decoder;
-	if (strcmp(pdata->pdo->di->decoder->id, op->pd))
+	di = pdata->pdo->di;
+	dec = di->decoder;
+	DBG("Annotation output from %s", di->inst_id);
+	if (strcmp(di->inst_id, op->pd_id))
 		/* This is not the PD selected for output. */
 		return;
 
@@ -263,11 +293,17 @@ static void srd_cb_ann(struct srd_proto_data *pdata, void *cb_data)
 		 */
 		return;
 
+	/*
+	 * Print the annotation information in textual representation
+	 * to the specified output file. Prefix the annotation strings
+	 * with the start and end sample number, the decoder name, and
+	 * the annotation name.
+	 */
 	dec_ann = g_slist_nth_data(dec->annotations, pda->ann_class);
 	line = g_string_sized_new(256);
 	g_string_printf(line, "%" PRIu64 "-%" PRIu64 " %s: %s:",
 			pdata->start_sample, pdata->end_sample,
-			pdata->pdo->di->decoder->id, dec_ann[0]);
+			dec->id, dec_ann[0]);
 	for (i = 0; pda->ann_text[i]; i++)
 		g_string_append_printf(line, " \"%s\"", pda->ann_text[i]);
 	g_string_append(line, "\n");
@@ -411,6 +447,17 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 			return FALSE;
 		g_hash_table_destroy(opts);
 
+		/*
+		 * Get (a reference to) the decoder instance's ID if we
+		 * are about to receive PD output from it. We need to
+		 * filter output that carries the decoder instance's name.
+		 */
+		if (strcmp(pd->name, op->pd) == 0) {
+			op->pd_id = di->inst_id;
+			DBG("Decoder of type \"%s\" has instance ID \"%s\".",
+			    op->pd, op->pd_id);
+		}
+
 		/* Map channels. */
 		if (pd->channels) {
 			channels = g_hash_table_new_full(g_str_hash, g_str_equal, NULL,
@@ -442,8 +489,14 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		}
 		prev_di = di;
 	}
+	/*
+	 * Bail out if we haven't created an instance of the selected
+	 * decoder type of which we shall grab output data from.
+	 */
+	if (!op->pd_id)
+		return FALSE;
 
-	/* Resolve top decoder's class index, so we can match. */
+	/* Resolve selected decoder's class index, so we can match. */
 	dec = srd_decoder_get_by_id(pd->name);
 	if (op->class) {
 		if (op->type == SRD_OUTPUT_ANN)
@@ -718,6 +771,7 @@ int main(int argc, char **argv)
 
 	op = malloc(sizeof(struct output));
 	op->pd = NULL;
+	op->pd_id = NULL;
 	op->type = -1;
 	op->class = NULL;
 	op->class_idx = -1;
