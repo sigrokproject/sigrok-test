@@ -459,16 +459,16 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 			if (!strcmp(decoder_class[0], op->class)) {
 				op->class_idx = idx;
 				break;
-			} else
-				idx++;
+			}
+			idx++;
 			l = l->next;
 		}
 		if (op->class_idx == -1) {
 			ERR("Output class '%s' not found in decoder %s.",
 					op->class, pd->name);
 			return FALSE;
-		} else
-			DBG("Class %s index is %d", op->class, op->class_idx);
+		}
+		DBG("Class %s index is %d", op->class, op->class_idx);
 	}
 
 	sr_session_start(sr_sess);
