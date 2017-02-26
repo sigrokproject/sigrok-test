@@ -755,14 +755,14 @@ int main(int argc, char **argv)
 			if (c == 'p') {
 				channel = malloc(sizeof(struct channel));
 				channel->name = g_strdup(kv[0]);
-				channel->channel = strtoul(kv[1], 0, 10);
+				channel->channel = strtoul(kv[1], NULL, 10);
 				/* Apply to last PD. */
 				pd->channels = g_slist_append(pd->channels, channel);
 			} else {
 				option = malloc(sizeof(struct option));
 				option->key = g_strdup(kv[0]);
 				option->value = g_variant_new_string(kv[1]);
-                g_variant_ref_sink(option->value);
+				g_variant_ref_sink(option->value);
 				/* Apply to last PD. */
 				pd->options = g_slist_append(pd->options, option);
 			}
