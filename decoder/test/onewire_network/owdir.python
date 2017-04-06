@@ -1,0 +1,4 @@
+513-993 onewire_network: ['RESET/PRESENCE', True]
+11131-27524 onewire_network: ['ROM', 4539628427758508840]
+32960-33440 onewire_network: ['RESET/PRESENCE', True]
+43163-59555 onewire_network: ['ROM', 7421932185967831106]

@@ -1,0 +1,6 @@
+513-993 onewire_network: text: "Reset/presence: true"
+5164-5619 onewire_network: text: "ROM command: 0xf0 'Search ROM'"
+11131-27524 onewire_network: text: "ROM: 0x3f000000c8cf9b28"
+32960-33440 onewire_network: text: "Reset/presence: true"
+37195-37650 onewire_network: text: "ROM command: 0xf0 'Search ROM'"
+43163-59555 onewire_network: text: "ROM: 0x6700000003a6a842"
