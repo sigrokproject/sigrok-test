@@ -561,7 +561,7 @@ ret = 0
 try:
     if args:
         testlist = get_tests(args)
-    elif opt_all:
+    elif opt_all or opt_list:
         testlist = get_tests(os.listdir(tests_dir))
     else:
         usage("Specify either -a or tests.")
