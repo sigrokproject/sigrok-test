@@ -62,7 +62,7 @@ def usage(msg=None):
   -l  List test(s)
   -s  Show test(s)
   -r  Run test(s)
-  -f  Fix failed test(s)
+  -f  Fix failed test(s) / create initial output for new test(s)
   -c  Report decoder code coverage
   -R <directory>  Save test reports to <directory>
   <test>  Protocol decoder name ("i2c") and optionally test name ("i2c/rtc")""")
