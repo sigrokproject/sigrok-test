@@ -113,6 +113,7 @@ def parse_testfile(path, pd, tc, op_type, op_class):
                     'name': f.pop(0),
                     'channels': [],
                     'options': [],
+                    'initial_pins': [],
                 }
                 while len(f):
                     if len(f) == 1:
@@ -131,6 +132,12 @@ def parse_testfile(path, pd, tc, op_type, op_class):
                         pd_spec['channels'].append([opt, val])
                     elif a == 'option':
                         pd_spec['options'].append([opt, val])
+                    elif a == 'initial_pin':
+                        try:
+                            val = int(val)
+                        except:
+                            raise E_syntax
+                        pd_spec['initial_pins'].append([opt, val])
                     else:
                         raise E_syntax
                 tclist[-1]['pdlist'].append(pd_spec)
@@ -319,6 +326,8 @@ def run_tests(tests, fix=False):
                         args.extend(['-p', "%s=%d" % (label, channel)])
                     for option, value in spd['options']:
                         args.extend(['-o', "%s=%s" % (option, value)])
+                    for label, initial_pin in spd['initial_pins']:
+                        args.extend(['-N', "%s=%d" % (label, initial_pin)])
                 args.extend(['-i', os.path.join(dumps_dir, tc['input'])])
                 for op in tc['output']:
                     name = "%s/%s/%s" % (pd, tc['name'], op['type'])
@@ -486,6 +495,8 @@ def show_tests(tests):
                         print("    Channel %s=%d" % (label, channel))
                     for option, value in pd['options']:
                         print("    Option %s=%s" % (option, value))
+                    for label, initial_pin in pd['initial_pins']:
+                        print("    Initial pin %s=%d" % (label, initial_pin))
                 if 'stack' in tc:
                     print("  Stack: %s" % ' '.join(tc['stack']))
                 print("  Input: %s" % tc['input'])

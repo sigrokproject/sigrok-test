@@ -52,10 +52,16 @@ struct option {
 	GVariant *value;
 };
 
+struct initial_pin_info {
+	char *name;
+	int value;
+};
+
 struct pd {
 	const char *name;
 	GSList *channels;
 	GSList *options;
+	GSList *initial_pins;
 };
 
 struct output {
@@ -142,6 +148,7 @@ static void usage(const char *msg)
 	printf("  -P <protocol decoder>\n");
 	printf("  -p <channelname=channelnum> (optional)\n");
 	printf("  -o <channeloption=value> (optional)\n");
+	printf("  -N <channelname=initial-pin-value> (optional)\n");
 	printf("  -i <input file>\n");
 	printf("  -O <output-pd:output-type[:output-class]>\n");
 	printf("  -f <output file> (optional)\n");
@@ -375,13 +382,15 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	struct option *option;
 	GVariant *gvar;
 	GHashTable *channels, *opts;
-	GSList *pdl, *l, *devices;
+	GSList *pdl, *l, *l2, *devices;
 	int idx, i;
 	int max_channel;
 	char **decoder_class;
 	struct sr_session *sr_sess;
 	gboolean is_number;
 	const char *s;
+	GArray *initial_pins;
+	struct initial_pin_info *initial_pin;
 
 	if (op->outfile) {
 		if ((op->outfd = open(op->outfile, O_CREAT|O_WRONLY, 0600)) == -1) {
@@ -475,6 +484,28 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 			if (srd_inst_channel_set_all(di, channels) != SRD_OK)
 				return FALSE;
 			g_hash_table_destroy(channels);
+		}
+
+		/* Set initial pins. */
+		if (pd->initial_pins) {
+			initial_pins = g_array_sized_new(FALSE, TRUE, sizeof(uint8_t),
+						di->dec_num_channels);
+			g_array_set_size(initial_pins, di->dec_num_channels);
+			memset(initial_pins->data, SRD_INITIAL_PIN_SAME_AS_SAMPLE0,
+				di->dec_num_channels);
+
+			for (l = pd->channels, idx = 0; l; l = l->next, idx++) {
+				channel = l->data;
+				for (l2 = pd->initial_pins; l2; l2 = l2->next) {
+					initial_pin = l2->data;
+					if (!strcmp(initial_pin->name, channel->name))
+						initial_pins->data[idx] = initial_pin->value;
+				}
+			}
+
+			if (srd_inst_initial_pins_set_all(di, initial_pins) != SRD_OK)
+				return FALSE;
+			g_array_free(initial_pins, TRUE);
 		}
 
 		/*
@@ -768,6 +799,7 @@ int main(int argc, char **argv)
 	struct output *op;
 	int ret, c;
 	char *opt_infile, **kv, **opstr;
+	struct initial_pin_info *initial_pin;
 
 	op = malloc(sizeof(struct output));
 	op->pd = NULL;
@@ -781,7 +813,7 @@ int main(int argc, char **argv)
 	opt_infile = NULL;
 	pd = NULL;
 	coverage = NULL;
-	while ((c = getopt(argc, argv, "dP:p:o:i:O:f:c:S")) != -1) {
+	while ((c = getopt(argc, argv, "dP:p:o:N:i:O:f:c:S")) != -1) {
 		switch (c) {
 		case 'd':
 			debug = TRUE;
@@ -789,11 +821,12 @@ int main(int argc, char **argv)
 		case 'P':
 			pd = g_malloc(sizeof(struct pd));
 			pd->name = g_strdup(optarg);
-			pd->channels = pd->options = NULL;
+			pd->channels = pd->options = pd->initial_pins = NULL;
 			pdlist = g_slist_append(pdlist, pd);
 			break;
 		case 'p':
 		case 'o':
+		case 'N':
 			if (g_slist_length(pdlist) == 0) {
 				/* No previous -P. */
 				ERR("Syntax error at '%s'", optarg);
@@ -812,13 +845,19 @@ int main(int argc, char **argv)
 				channel->channel = strtoul(kv[1], NULL, 10);
 				/* Apply to last PD. */
 				pd->channels = g_slist_append(pd->channels, channel);
-			} else {
+			} else if (c == 'o') {
 				option = malloc(sizeof(struct option));
 				option->key = g_strdup(kv[0]);
 				option->value = g_variant_new_string(kv[1]);
 				g_variant_ref_sink(option->value);
 				/* Apply to last PD. */
 				pd->options = g_slist_append(pd->options, option);
+			} else {
+				initial_pin = malloc(sizeof(struct initial_pin_info));
+				initial_pin->name = g_strdup(kv[0]);
+				initial_pin->value = strtoul(kv[1], NULL, 10);
+				/* Apply to last PD. */
+				pd->initial_pins = g_slist_append(pd->initial_pins, initial_pin);
 			}
 			break;
 		case 'i':
