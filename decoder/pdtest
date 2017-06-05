@@ -485,7 +485,7 @@ def show_tests(tests):
                     for label, channel in pd['channels']:
                         print("    Channel %s=%d" % (label, channel))
                     for option, value in pd['options']:
-                        print("    Option %s=%d" % (option, value))
+                        print("    Option %s=%s" % (option, value))
                 if 'stack' in tc:
                     print("  Stack: %s" % ' '.join(tc['stack']))
                 print("  Input: %s" % tc['input'])
