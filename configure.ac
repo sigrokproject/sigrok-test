@@ -87,7 +87,7 @@ AC_CHECK_HEADER([sys/resource.h],,
 # Retrieve the compile and link flags for all modules combined.
 # Also, bail out at this point if any module dependency is not met.
 PKG_CHECK_MODULES([SIGROK_TEST],
-	[glib-2.0 >= 2.24.0 libsigrok >= 0.3.0 libsigrokdecode >= 0.4.0 $ST_PKGLIBS])
+	[glib-2.0 >= 2.24.0 libsigrok >= 0.5.0 libsigrokdecode >= 0.5.0 $ST_PKGLIBS])
 
 # Allow the user to override the location of the protocol decoders.
 AC_ARG_WITH([decodersdir],
@@ -128,7 +128,7 @@ Compile configuration:
 
 Detected libraries (required):
  - glib-2.0 >= 2.24.0.............. $st_glib_version
- - libsigrok >= 0.3.0.............. $st_libsigrok_version
- - libsigrokdecode >= 0.4.0........ $st_libsigrokdecode_version
+ - libsigrok >= 0.5.0.............. $st_libsigrok_version
+ - libsigrokdecode >= 0.5.0........ $st_libsigrokdecode_version
 $st_pkglibs_summary
 _EOF
