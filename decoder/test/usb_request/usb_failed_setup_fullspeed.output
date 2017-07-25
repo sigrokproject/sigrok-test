@@ -1,0 +1,4 @@
+2704-27384 usb_request: request-setup-read: "SETUP in: [ 80 06 00 06 00 00 0A 00 ][ ] : STALL"
+27384-67470 usb_request: request-setup-read: "SETUP in: [ 80 06 00 06 00 00 0A 00 ][ ] : STALL"
+67470-110431 usb_request: request-setup-read: "SETUP in: [ 80 06 00 06 00 00 0A 00 ][ ] : STALL"
+110431-181657 usb_request: request-setup-read: "SETUP in: [ 80 06 00 02 00 00 09 00 ][ 09 02 29 00 01 01 00 80 32 ] : ACK"
