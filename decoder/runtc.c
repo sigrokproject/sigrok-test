@@ -400,13 +400,17 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		}
 	}
 
-	if (sr_session_load(ctx, infile, &sr_sess) != SR_OK)
+	if (sr_session_load(ctx, infile, &sr_sess) != SR_OK){
+		ERR("sr_session_load() failed");
 		return FALSE;
+	}
 
 	sr_session_dev_list(sr_sess, &devices);
 
-	if (srd_session_new(&sess) != SRD_OK)
+	if (srd_session_new(&sess) != SRD_OK) {
+		ERR("srd_session_new() failed");
 		return FALSE;
+	}
 	sr_session_datafeed_callback_add(sr_sess, sr_cb, sess);
 	switch (op->type) {
 	case SRD_OUTPUT_ANN:
@@ -419,6 +423,7 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		cb = srd_cb_py;
 		break;
 	default:
+		ERR("Invalid op->type");
 		return FALSE;
 	}
 	srd_pd_output_callback_add(sess, op->type, cb, op);
@@ -427,8 +432,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	pd = NULL;
 	for (pdl = pdlist; pdl; pdl = pdl->next) {
 		pd = pdl->data;
-		if (srd_decoder_load(pd->name) != SRD_OK)
+		if (srd_decoder_load(pd->name) != SRD_OK) {
+			ERR("srd_decoder_load() failed");
 			return FALSE;
+		}
 
 		/* Instantiate decoder and pass in options. */
 		opts = g_hash_table_new_full(g_str_hash, g_str_equal, NULL,
@@ -452,8 +459,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 				g_hash_table_insert(opts, option->key, option->value);
 			}
 		}
-		if (!(di = srd_inst_new(sess, pd->name, opts)))
+		if (!(di = srd_inst_new(sess, pd->name, opts))) {
+			ERR("srd_inst_new() failed");
 			return FALSE;
+		}
 		g_hash_table_destroy(opts);
 
 		/*
@@ -481,8 +490,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 				g_hash_table_insert(channels, channel->name, gvar);
 			}
 
-			if (srd_inst_channel_set_all(di, channels) != SRD_OK)
+			if (srd_inst_channel_set_all(di, channels) != SRD_OK) {
+				ERR("srd_inst_channel_set_all() failed");
 				return FALSE;
+			}
 			g_hash_table_destroy(channels);
 		}
 
@@ -503,8 +514,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 				}
 			}
 
-			if (srd_inst_initial_pins_set_all(di, initial_pins) != SRD_OK)
+			if (srd_inst_initial_pins_set_all(di, initial_pins) != SRD_OK) {
+				ERR("srd_inst_initial_pins_set_all() failed");
 				return FALSE;
+			}
 			g_array_free(initial_pins, TRUE);
 		}
 
@@ -524,8 +537,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	 * Bail out if we haven't created an instance of the selected
 	 * decoder type of which we shall grab output data from.
 	 */
-	if (!op->pd_id)
+	if (!op->pd_id) {
+		ERR("No / invalid decoder");
 		return FALSE;
+	}
 
 	/* Resolve selected decoder's class index, so we can match. */
 	dec = srd_decoder_get_by_id(pd->name);
@@ -534,9 +549,11 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 			l = dec->annotations;
 		else if (op->type == SRD_OUTPUT_BINARY)
 			l = dec->binary;
-		else
+		else {
 			/* Only annotations and binary can have a class. */
+			ERR("Invalid decoder class");
 			return FALSE;
+		}
 		idx = 0;
 		while (l) {
 			decoder_class = l->data;
