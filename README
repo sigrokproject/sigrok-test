@@ -54,6 +54,39 @@ This will test the decoders located at /path/to/decoders:
  $ LD_LIBRARY_PATH=$HOME/sr/lib ./decoder/pdtest -r -v -a
 
 
+Adding tests
+------------
+
+The best way to add tests is to copy one that is similar, and adjust
+accordingly. Some notes:
+
+ * In test.conf, the channel assignments must be done in a specific way:
+
+    protocol-decoder <pdname> channel <pd_channel_name>=<#> ...
+
+   Example:
+
+    protocol-decoder mcs48 d0=8 d1=9 [...] a8=0 ...
+
+   Of important note, the channels/probes are numbered from 0, regardless of
+   the naming used in the capture file.
+
+ * To troubleshoot a specific test, try:
+
+    * Run all tests under decoder/test/<testroot>:
+
+      ./decoder/pdtest -v -d -r <testroot>
+  
+    * Run the named test. Note, in this case <testname> is not
+      a file but rather a test described in <testroot>/test.conf.
+
+      ./decoder/pdtest -v -d -r <testroot>/<testname>
+
+    * Print parameters as parsed from <testroot>/test.conf (to spot typos):
+
+      ./decoder/pdtest -v -s <testroot>
+
+
 Copyright and license
 ---------------------
 
