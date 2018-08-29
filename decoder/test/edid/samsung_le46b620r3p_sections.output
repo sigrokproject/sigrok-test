@@ -1,3 +1,6 @@
+1051-1458 edid: sections: "EDID"
+1981-2863 edid: sections: "Offset: 0" "O: 0" "0"
+2985-3393 edid: sections: "EDID"
 3444-6497 edid: sections: "Header"
 6558-10499 edid: sections: "Vendor/product"
 10562-11333 edid: sections: "EDID Version"
