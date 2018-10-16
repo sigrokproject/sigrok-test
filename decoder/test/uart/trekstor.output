@@ -1245,6 +1245,7 @@
 6190-6260 uart: rx-data: "[00]"
 6259-6268 uart: rx-warnings: "Frame error" "Frame err" "FE"
 6259-6268 uart: rx-parity-ok: "Stop bit" "Stop" "T"
+6181-35074 uart: rx-break: "Break condition" "Break" "Brk" "B"
 35108-35117 uart: rx-start: "Start bit" "Start" "S"
 35117-35126 uart: rx-data-bits: "0"
 35126-35135 uart: rx-data-bits: "0"
