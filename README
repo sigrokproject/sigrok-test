@@ -71,12 +71,22 @@ accordingly. Some notes:
    Of important note, the channels/probes are numbered from 0, regardless of
    the naming used in the capture file.
 
+ * To initially generate the test files which have been configured in test.conf
+   pdtest has to be run with the -f parameter first.
+
+   Example:
+
+    ./decoder/pdtest -r -v -f <testroot>
+
+  This can also be done to update the test-cases in case of a changes in
+  the protocol decoder.
+
  * To troubleshoot a specific test, try:
 
     * Run all tests under decoder/test/<testroot>:
 
       ./decoder/pdtest -v -d -r <testroot>
-  
+
     * Run the named test. Note, in this case <testname> is not
       a file but rather a test described in <testroot>/test.conf.
 
