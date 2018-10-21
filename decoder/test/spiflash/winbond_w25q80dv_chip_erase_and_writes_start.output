@@ -1,0 +1,51 @@
+149-166 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+170-187 spiflash: bit: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+170-187 spiflash: field: "Status register"
+149-187 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+206-223 spiflash: field: "Command: Read identification (RDID)" "Command: Read identification" "Cmd: Read identification" "Cmd: RDID" "RDID"
+227-244 spiflash: field: "Manufacturer ID: 0xef"
+245-262 spiflash: field: "Memory type: 0x40"
+264-280 spiflash: field: "Device ID: 0x14"
+206-280 spiflash: rdid: "Read identification (RDID): Device = Winbond Unknown" "Read identification: Device = Winbond Unknown" "RDID: Device = Winbond Unknown" "Device = Winbond Unknown" "Winbond Unknown"
+520-537 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+541-558 spiflash: bit: "No write operation in progress.
+Internal write enable latch is not set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+541-558 spiflash: field: "Status register"
+520-558 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+579-595 spiflash: wren: "Command: Write enable (WREN)" "Command: Write enable" "Cmd: Write enable" "Cmd: WREN" "WREN"
+611-628 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+631-648 spiflash: bit: "No write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+631-648 spiflash: field: "Status register"
+611-648 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+712-729 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+733-750 spiflash: bit: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+733-750 spiflash: field: "Status register"
+712-750 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+768-786 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+788-805 spiflash: bit: "Write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+788-805 spiflash: field: "Status register"
+768-805 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"

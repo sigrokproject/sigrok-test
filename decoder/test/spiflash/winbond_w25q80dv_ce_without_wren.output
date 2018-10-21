@@ -1,0 +1,9 @@
+8-25 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+28-45 spiflash: bit: "No write operation in progress.
+Internal write enable latch is set.
+Block protection bits (BP3-BP0): 0x0.
+Device is not in continuously program mode (CP mode).
+Status register writes are allowed.
+"
+28-45 spiflash: field: "Status register"
+8-45 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
