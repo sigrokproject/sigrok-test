@@ -31,6 +31,7 @@ Status register writes are allowed.
 "
 631-648 spiflash: field: "Status register"
 611-648 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+669-687 spiflash: ce: "Command: Chip erase (CE)" "Command: Chip erase" "Cmd: Chip erase" "Cmd: CE" "CE"
 712-729 spiflash: field: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
 733-750 spiflash: bit: "Write operation in progress.
 Internal write enable latch is set.

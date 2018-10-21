@@ -7,3 +7,4 @@ Status register writes are allowed.
 "
 28-45 spiflash: field: "Status register"
 8-45 spiflash: rdsr: "Command: Read status register (RDSR)" "Command: Read status register" "Cmd: Read status register" "Cmd: RDSR" "RDSR"
+66-84 spiflash: ce: "Command: Chip erase (CE)" "Command: Chip erase" "Cmd: Chip erase" "Cmd: CE" "CE"

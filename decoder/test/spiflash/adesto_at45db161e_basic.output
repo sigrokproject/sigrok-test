@@ -6,6 +6,7 @@
 4256105-4256165 spiflash: bit: "Unknown command: 0x00"
 4256168-4256229 spiflash: bit: "Unknown command: 0x00"
 5895664-5895725 spiflash: field: "Command: Main memory page program through buffer 1 with built-in erase (WRITE1)" "Command: Main memory page program through buffer 1 with built-in erase" "Cmd: Main memory page program through buffer 1 with built-in erase" "Cmd: WRITE1" "WRITE1"
+5895664-4256102 spiflash: warning: "Warning: WREN might be missing"
 5895724-5895785 spiflash: bit: "Address bits 23..16: 0x04" "Addr bits 23..16: 0x04" "Addr bits 23..16" "A23..A16"
 5895784-5895844 spiflash: bit: "Address bits 15..8: 0x8c" "Addr bits 15..8: 0x8c" "Addr bits 15..8" "A15..A8"
 5895845-5895906 spiflash: bit: "Address bits 7..0: 0x00" "Addr bits 7..0: 0x00" "Addr bits 7..0" "A7..A0"
