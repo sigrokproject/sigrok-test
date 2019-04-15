@@ -4,7 +4,6 @@
 502-1240 sdcard_spi: bit-warnings: "Argument: 0x0001"
 1263-1409 sdcard_spi: bit-warnings: "CRC7: 0x0"
 1409-1430 sdcard_spi: bit-warnings: "End bit: 1"
-1409-1430 sdcard_spi: bit-warnings: "End bit: 1"
 312-1430 sdcard_spi: cmd24: "CMD24 (WRITE_BLOCK): Write a block to address 0x0001"
 14900-15067 sdcard_spi: acmd1: "R1: 0x00"
 15046-15067 sdcard_spi: bit-warnings: "Card is not in idle state"
