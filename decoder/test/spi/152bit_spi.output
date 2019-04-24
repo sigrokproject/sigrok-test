@@ -1,5 +1,3 @@
-18446744073709551615-0 spi: miso-transfer: ""
-18446744073709551615-0 spi: mosi-transfer: ""
 662-666 spi: miso-bits: "0"
 658-662 spi: miso-bits: "0"
 654-658 spi: miso-bits: "0"
