@@ -21,3 +21,4 @@
 47206-47236 sdcard_spi: bit-warnings: "Data accepted"
 47236-47246 sdcard_spi: bit-warnings: "Always 1"
 47166-47246 sdcard_spi: cmd24: "Data Response"
+47256-47606 sdcard_spi: cmd24: "Card is busy"

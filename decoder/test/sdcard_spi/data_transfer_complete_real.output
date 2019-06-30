@@ -21,3 +21,4 @@
 103271-103333 sdcard_spi: bit-warnings: "Data accepted"
 103333-103354 sdcard_spi: bit-warnings: "Always 1"
 103187-103354 sdcard_spi: cmd24: "Data Response"
+103392-4997904 sdcard_spi: cmd24: "Card is busy"
