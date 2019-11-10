@@ -717,3 +717,8 @@
 9908883-9913050 lin: data: "Sync" "S"
 9915904-9920071 lin: data: "ID: 23 Parity: 2 (ok)" "ID: 0x23" "I: 35"
 9950232-9957494 lin: control: "Break condition" "Break" "Brk" "B"
+9959850-9964017 lin: data: "Sync" "S"
+9966871-9971038 lin: data: "ID: 23 Parity: 2 (ok)" "ID: 0x23" "I: 35"
+9972459-9976626 lin: data: "Data: 0x23" "D: 0x23"
+9978180-9982347 lin: data: "Data: 0x42" "D: 0x42"
+9983901-9988068 lin: data: "Checksum: 0xF6" "Checksum" "Chk" "C"

@@ -1,1 +1,6 @@
 1983069-1990344 lin: control: "Break condition" "Break" "Brk" "B"
+1992540-1996707 lin: data: "Sync" "S"
+1999561-2003728 lin: data: "ID: 01 Parity: 3 (ok)" "ID: 0x01" "I: 1"
+2005061-2009228 lin: data: "Data: 0x11" "D: 0x11"
+2010782-2014949 lin: data: "Data: 0x11" "D: 0x11"
+2016502-2020669 lin: data: "Checksum: 0x1C" "Checksum" "Chk" "C"

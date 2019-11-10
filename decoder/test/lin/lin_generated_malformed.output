@@ -32,3 +32,8 @@
 5079182-5100016 lin: data: "Sync" "S"
 5114286-5135120 lin: data: "ID: 23 Parity: 2 (ok)" "ID: 0x23" "I: 35"
 5285288-5321580 lin: control: "Break condition" "Break" "Brk" "B"
+5332714-5353548 lin: data: "Sync" "S"
+5367819-5388653 lin: data: "ID: 23 Parity: 2 (ok)" "ID: 0x23" "I: 35"
+5395657-5416491 lin: data: "Data: 0x00" "D: 0x00"
+5424261-5445095 lin: data: "Data: 0x00" "D: 0x00"
+5452865-5473699 lin: data: "Checksum: 0x5C" "Checksum" "Chk" "C"

@@ -53,3 +53,8 @@
 34353-34771 lin: data: "Data: 0x22" "D: 0x22"
 34976-35394 lin: data: "Checksum: 0x29" "Checksum" "Chk" "C"
 35557-36236 lin: control: "Break condition" "Break" "Brk" "B"
+36394-36812 lin: data: "Sync" "S"
+37021-37439 lin: data: "ID: 23 Parity: 2 (ok)" "ID: 0x23" "I: 35"
+37663-38081 lin: data: "Data: 0x11" "D: 0x11"
+38290-38708 lin: data: "Data: 0x22" "D: 0x22"
+38914-39332 lin: data: "Checksum: 0x29" "Checksum" "Chk" "C"
