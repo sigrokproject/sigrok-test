@@ -1,4 +1,4 @@
-4065-5166 onewire_link: warnings: "Erroneous signal" "Error" "Err" "E"
+4065-5166 onewire_link: warning: "Erroneous signal" "Error" "Err" "E"
 8256-8737 onewire_link: bit: "Bit: 0" "0"
 10480-10961 onewire_link: bit: "Bit: 0" "0"
 11486-11967 onewire_link: bit: "Bit: 0" "0"

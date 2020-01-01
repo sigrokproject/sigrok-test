@@ -1,4 +1,4 @@
-2-3 z80: warn: "Illegal transition between control states"
+2-3 z80: warning: "Illegal transition between control states"
 5-8 z80: memrd: "0A"
 6-9 z80: addr: "01AF"
 8-10 z80: memrd: "F4"

@@ -4,7 +4,7 @@
 358713-358801 eeprom24xx: address-pin: "Address bit 0: 0" "Addr bit 0" "A0" "A"
 358801-358889 eeprom24xx: rw-bit: "R/W bit: read" "R/W" "RW" "R"
 358188-358889 eeprom24xx: control-word: "Control word" "Control" "CW" "C"
-358102-359806 eeprom24xx: warnings: "Warning: STOP expected (not RESTART)"
+358102-359806 eeprom24xx: warning: "Warning: STOP expected (not RESTART)"
 358976-359676 eeprom24xx: data-byte: "Data byte 00: FF" "Data byte: FF" "Byte: FF" "DB: FF" "FF"
 358976-359676 eeprom24xx: data: "Data" "D"
 358102-359806 eeprom24xx: cur-addr-read: "Current address read: FF" "Current address read" "Cur addr read" "CAR" "C"

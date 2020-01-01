@@ -1,5 +1,5 @@
 6452172-6453517 avr_isp: pe: "Programming enable"
-6452172-6453517 avr_isp: warnings: "Warning: Unexpected bytes in reply!"
+6452172-6453517 avr_isp: warning: "Warning: Unexpected bytes in reply!"
 6460715-6462063 avr_isp: rsb0: "Vendor code: 0x1e (Atmel)"
 6476216-6477565 avr_isp: rsb1: "Part family / memory size: 0x93"
 6492733-6494082 avr_isp: rsb2: "Part number: 0x0a"

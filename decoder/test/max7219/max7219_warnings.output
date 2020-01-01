@@ -1,3 +1,3 @@
-233663-234716 max7219: warnings: "Short write"
-435503-437646 max7219: warnings: "Overlong write"
-637944-639016 max7219: warnings: "Unknown register 0D"
+233663-234716 max7219: warning: "Short write"
+435503-437646 max7219: warning: "Overlong write"
+637944-639016 max7219: warning: "Unknown register 0D"

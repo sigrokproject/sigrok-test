@@ -681,7 +681,7 @@
 868387-868427 usb_power_delivery: eop: "EOP" "E"
 867231-868427 usb_power_delivery: text: "#23   (361.346250ms): (r2) SRC[2]: GOOD CRC" "..."
 869448-869977 usb_power_delivery: preamble: "Junk???" "XXX"
-869448-869977 usb_power_delivery: warnings: "No start of packet found" "XXX"
+869448-869977 usb_power_delivery: warning: "No start of packet found" "XXX"
 869448-869977 usb_power_delivery: text: "#24   (362.270000ms): Junk???" "..."
 870175-870473 usb_power_delivery: preamble: "Preamble" "..."
 870473-870513 usb_power_delivery: sym: "SYNC-1" "S1"

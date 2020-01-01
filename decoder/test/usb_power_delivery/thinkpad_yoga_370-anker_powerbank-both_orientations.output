@@ -231,7 +231,7 @@
 252041-252108 usb_power_delivery: eop: "EOP" "E"
 250110-252108 usb_power_delivery: text: "#8    (62.527500ms): (r2) SRC[2]: PS RDY" "..."
 252555-254549 usb_power_delivery: preamble: "Junk???" "XXX"
-252555-254549 usb_power_delivery: warnings: "No start of packet found" "XXX"
+252555-254549 usb_power_delivery: warning: "No start of packet found" "XXX"
 252555-254549 usb_power_delivery: text: "#9    (63.138750ms): Junk???" "..."
 632525-633384 usb_power_delivery: preamble: "Preamble" "..."
 633384-633449 usb_power_delivery: sym: "SYNC-1" "S1"
