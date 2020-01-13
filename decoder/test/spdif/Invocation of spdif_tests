@@ -1,0 +1,5 @@
+Invocation of tests
+
+sigrok-cli -i spdif_16mhz_44khz.sr --set -P spdif:data=D6 >spdif_16mhz_44khz.output 2>spdif_16mhz_44khz.error
+sigrok-cli -i spdif_16mhz_44khz_3.sr --set -P spdif:data=D6 >spdif_16mhz_44khz_3.output 2>spdif_16mhz_44khz_3.error
+sigrok-cli -i spdif_24mhz_44khz_1.sr --set -P spdif:data=6 >spdif_24mhz_44khz_1.output 2>spdif_24mhz_44khz_1.error
