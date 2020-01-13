@@ -1,0 +1,8 @@
+srd: SamplerateError: Protocol decoder instance spdif-1: : Short pulses detected
+srd: Traceback (most recent call last):
+  File "/usr/share/libsigrokdecode/decoders/spdif/pd.py", line 290, in decode
+    self.find_third_pulse_width()
+  File "/usr/share/libsigrokdecode/decoders/spdif/pd.py", line 144, in find_third_pulse_width
+    raise SamplerateError('Short pulses detected')
+spdif.pd.SamplerateError: Short pulses detected
+
