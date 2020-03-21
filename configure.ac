@@ -54,8 +54,11 @@ ST_PKGLIBS=
 SR_PKG_CHECK_SUMMARY([st_pkglibs_summary])
 
 # Python 3 is always needed.
+# Starting with Python 3.8 we need to check for "python-3.8-embed"
+# first, since usually only that variant will add "-lpython3.8".
+# https://docs.python.org/3/whatsnew/3.8.html#debug-build-uses-the-same-abi-as-release-build
 SR_PKG_CHECK([python3], [ST_PKGLIBS],
-	[python3 >= 3.2], [python-3.5 >= 3.5], [python-3.4 >= 3.4], [python-3.3 >= 3.3], [python-3.2 >= 3.2])
+	[python-3.8-embed], [python-3.8 >= 3.8], [python-3.7 >= 3.7], [python-3.6 >= 3.6], [python-3.5 >= 3.5], [python-3.4 >= 3.4], [python-3.3 >= 3.3], [python-3.2 >= 3.2], [python3 >= 3.2])
 AS_IF([test "x$sr_have_python3" = xno],
 	[AC_MSG_ERROR([Cannot find Python 3 development headers.])])
 
