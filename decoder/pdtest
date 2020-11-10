@@ -24,7 +24,7 @@ import re
 from getopt import getopt
 from tempfile import mkstemp
 from subprocess import Popen, PIPE
-from difflib import Differ
+from difflib import unified_diff
 from hashlib import md5
 from shutil import copy
 
@@ -236,12 +236,9 @@ def get_tests(testnames):
 def diff_text(f1, f2):
     t1 = open(f1).readlines()
     t2 = open(f2).readlines()
-    diff = []
-    d = Differ()
-    for line in d.compare(t1, t2):
-        if line[:2] in ('- ', '+ '):
-            diff.append(line.strip())
-
+    diff = list(unified_diff(t1, t2))
+    diff = diff[2:] # Strip two from/to filename lines with "+++"/"---".
+    diff = [d.strip() for d in diff if d[0] in ('+', '-')]
     return diff
 
 
