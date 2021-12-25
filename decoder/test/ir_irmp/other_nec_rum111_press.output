@@ -1,0 +1,1 @@
+2114800-2425200 ir_irmp: packet: "Protocol: NEC16 (27), Address 0x00f4, Command: 0x0008, Flags: -" "P: NEC16 (27), Addr: 0xf4, Cmd: 0x8, Flg: -" "P: 27 A: 0xf4 C: 0x8 F: -" "C:8 A:f4 -" "C:8"

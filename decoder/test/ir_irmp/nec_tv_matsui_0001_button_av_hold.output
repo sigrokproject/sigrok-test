@@ -1,0 +1,7 @@
+678200-844500 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: -" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: -" "P: 2 A: 0xbf40 C: 0x44 F: -" "C:44 A:bf40 -" "C:44"
+893100-916800 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"
+1107900-1131600 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"
+1322700-1346300 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"
+1537400-1561100 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"
+1752200-1775800 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"
+1966900-1990600 ir_irmp: packet: "Protocol: NEC (2), Address 0xbf40, Command: 0x0044, Flags: repeat" "P: NEC (2), Addr: 0xbf40, Cmd: 0x44, Flg: rep" "P: 2 A: 0xbf40 C: 0x44 F: rep" "C:44 A:bf40 r" "C:44"

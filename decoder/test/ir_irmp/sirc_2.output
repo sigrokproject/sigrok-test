@@ -1,0 +1,1 @@
+0-15850 ir_irmp: packet: "Protocol: SIRCS (1), Address 0x081c, Command: 0x2d01, Flags: -" "P: SIRCS (1), Addr: 0x81c, Cmd: 0x2d01, Flg: -" "P: 1 A: 0x81c C: 0x2d01 F: -" "C:2d01 A:81c -" "C:2d01"

@@ -1,0 +1,2 @@
+2695-3293 ir_irmp: packet: "Protocol: SIRCS (1), Address 0x0801, Command: 0x082c, Flags: -" "P: SIRCS (1), Addr: 0x801, Cmd: 0x82c, Flg: -" "P: 1 A: 0x801 C: 0x82c F: -" "C:82c A:801 -" "C:82c"
+5381-5979 ir_irmp: packet: "Protocol: SIRCS (1), Address 0x0801, Command: 0x082c, Flags: repeat" "P: SIRCS (1), Addr: 0x801, Cmd: 0x82c, Flg: rep" "P: 1 A: 0x801 C: 0x82c F: rep" "C:82c A:801 r" "C:82c"
