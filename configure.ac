@@ -25,6 +25,7 @@ AC_INIT([sigrok-test], [0.1.0], [sigrok-devel@lists.sourceforge.net],
 	[sigrok-test], [http://www.sigrok.org])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([autostuff])
+AC_CONFIG_HEADERS([config.h])
 
 # We require at least automake 1.11 (needed for 'silent rules').
 AM_INIT_AUTOMAKE([1.11 -Wall -Werror no-define subdir-objects check-news])
@@ -89,8 +90,17 @@ AC_CHECK_HEADER([sys/resource.h],,
 
 # Retrieve the compile and link flags for all modules combined.
 # Also, bail out at this point if any module dependency is not met.
+# Check availability of library version dependent features.
 PKG_CHECK_MODULES([SIGROK_TEST],
 	[glib-2.0 >= 2.24.0 libsigrok >= 0.5.0 libsigrokdecode >= 0.5.0 $ST_PKGLIBS])
+AC_LANG([C])
+st_save_cflags=$CFLAGS
+st_save_libs=$LIBS
+CFLAGS="$SIGROK_TEST_CFLAGS $CFLAGS"
+LIBS="$SIGROK_TEST_LIBS $LIBS"
+AC_CHECK_FUNCS([srd_session_send_eof])
+CFLAGS=$st_save_cflags
+LIBS=$st_save_libs
 
 # Allow the user to override the location of the protocol decoders.
 AC_ARG_WITH([decodersdir],
