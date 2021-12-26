@@ -17,6 +17,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <config.h>
+
 #include <Python.h>
 #include <libsigrokdecode/libsigrokdecode.h>
 #include <libsigrok/libsigrok.h>
@@ -366,6 +368,9 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 		break;
 	case SR_DF_END:
 		DBG("Received SR_DF_END");
+#if defined HAVE_SRD_SESSION_SEND_EOF && HAVE_SRD_SESSION_SEND_EOF
+		(void)srd_session_send_eof(sess);
+#endif
 		break;
 	}
 
