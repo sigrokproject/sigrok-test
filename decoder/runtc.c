@@ -326,10 +326,16 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 		const struct sr_datafeed_packet *packet, void *cb_data)
 {
 	static int samplecnt = 0;
+	static gboolean start_sent;
+
 	const struct sr_datafeed_logic *logic;
 	struct srd_session *sess;
+	const struct sr_datafeed_meta *meta;
+	struct sr_config *src;
+	GSList *l;
 	GVariant *gvar;
 	uint64_t samplerate;
+	int ret;
 	int num_samples;
 	struct sr_dev_driver *driver;
 
@@ -338,26 +344,49 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 	driver = sr_dev_inst_driver_get(sdi);
 
 	switch (packet->type) {
+	case SR_DF_META:
+		DBG("Received SR_DF_META");
+		meta = packet->payload;
+		for (l = meta->config; l; l = l->next) {
+			src = l->data;
+			switch (src->key) {
+			case SR_CONF_SAMPLERATE:
+				samplerate = g_variant_get_uint64(src->data);
+				ret = srd_session_metadata_set(sess,
+					SRD_CONF_SAMPLERATE,
+					g_variant_new_uint64(samplerate));
+				if (ret != SRD_OK)
+					ERR("Setting samplerate failed (meta)");
+				break;
+			default:
+				/* EMPTY */
+				break;
+			}
+		}
+		break;
 	case SR_DF_HEADER:
 		DBG("Received SR_DF_HEADER");
 		if (sr_config_get(driver, sdi, NULL, SR_CONF_SAMPLERATE,
 				&gvar) != SR_OK) {
-			ERR("Getting samplerate failed");
+			DBG("Getting samplerate failed (SR_DF_HEADER)");
 			break;
 		}
 		samplerate = g_variant_get_uint64(gvar);
 		g_variant_unref(gvar);
-		if (srd_session_metadata_set(sess, SRD_CONF_SAMPLERATE,
-				g_variant_new_uint64(samplerate)) != SRD_OK) {
-			ERR("Setting samplerate failed");
-			break;
-		}
-		if (srd_session_start(sess) != SRD_OK) {
-			ERR("Session start failed");
-			break;
-		}
+		ret = srd_session_metadata_set(sess, SRD_CONF_SAMPLERATE,
+			g_variant_new_uint64(samplerate));
+		if (ret != SRD_OK)
+			ERR("Setting samplerate failed (header)");
 		break;
 	case SR_DF_LOGIC:
+		DBG("Received SR_DF_LOGIC");
+		if (!start_sent) {
+			if (srd_session_start(sess) != SRD_OK) {
+				ERR("Session start failed");
+				break;
+			}
+			start_sent = TRUE;
+		}
 		logic = packet->payload;
 		num_samples = logic->length / logic->unitsize;
 		DBG("Received SR_DF_LOGIC (%"PRIu64" bytes, unitsize = %d).",
