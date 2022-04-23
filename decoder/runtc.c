@@ -70,7 +70,7 @@ struct output {
 	const char *pd;
 	const char *pd_id;
 	int type;
-	const char *class;
+	const char *class_;
 	int class_idx;
 	const char *outfile;
 	int outfd;
@@ -549,7 +549,7 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 
 	/* Resolve selected decoder's class index, so we can match. */
 	dec = srd_decoder_get_by_id(pd->name);
-	if (op->class) {
+	if (op->class_) {
 		if (op->type == SRD_OUTPUT_ANN)
 			l = dec->annotations;
 		else if (op->type == SRD_OUTPUT_BINARY)
@@ -562,7 +562,7 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		idx = 0;
 		while (l) {
 			decoder_class = l->data;
-			if (!strcmp(decoder_class[0], op->class)) {
+			if (!strcmp(decoder_class[0], op->class_)) {
 				op->class_idx = idx;
 				break;
 			}
@@ -571,10 +571,10 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		}
 		if (op->class_idx == -1) {
 			ERR("Output class '%s' not found in decoder %s.",
-					op->class, pd->name);
+					op->class_, pd->name);
 			return FALSE;
 		}
-		DBG("Class %s index is %d", op->class, op->class_idx);
+		DBG("Class %s index is %d", op->class_, op->class_idx);
 	}
 
 	sr_session_start(sr_sess);
@@ -827,7 +827,7 @@ int main(int argc, char **argv)
 	op->pd = NULL;
 	op->pd_id = NULL;
 	op->type = -1;
-	op->class = NULL;
+	op->class_ = NULL;
 	op->class_idx = -1;
 	op->outfd = 1;
 
@@ -909,7 +909,7 @@ int main(int argc, char **argv)
 				usage(NULL);
 			}
 			if (opstr[2])
-				op->class = g_strdup(opstr[2]);
+				op->class_ = g_strdup(opstr[2]);
 			g_strfreev(opstr);
 			break;
 		case 'f':
