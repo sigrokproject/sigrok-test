@@ -39,6 +39,8 @@
 #include <sched.h>
 #endif
 
+#define CHUNK_SIZE	(4 * 1024 * 1024)
+
 static int debug = FALSE;
 static int statistics = FALSE;
 static char *coverage_report;
@@ -64,6 +66,13 @@ struct pd {
 	GSList *channels;
 	GSList *options;
 	GSList *initial_pins;
+};
+
+struct input {
+	const char *filename;
+	const char *format;
+	GSList *opt_list;
+	GHashTable *opt_hash;
 };
 
 struct output {
@@ -152,6 +161,7 @@ static void usage(const char *msg)
 	printf("  -o <channeloption=value> (optional)\n");
 	printf("  -N <channelname=initial-pin-value> (optional)\n");
 	printf("  -i <input file>\n");
+	printf("  -I <input format> (optional)\n");
 	printf("  -O <output-pd:output-type[:output-class]>\n");
 	printf("  -f <output file> (optional)\n");
 	printf("  -c <coverage report> (optional)\n");
@@ -405,7 +415,105 @@ static void sr_cb(const struct sr_dev_inst *sdi,
 
 }
 
-static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
+static GHashTable *parse_input_options(const struct sr_option **pd_opts,
+	GSList *user_specs)
+{
+	GHashTable *set_opts;
+	GVariant *pd_def, *gvar;
+	size_t idx;
+	GSList *l;
+	const char *pd_key;
+	const char *spec_text, *s;
+
+	set_opts = g_hash_table_new_full(g_str_hash, g_str_equal, g_free,
+		(GDestroyNotify)g_variant_unref);
+	for (idx = 0; pd_opts[idx]; idx++) {
+		pd_key = pd_opts[idx]->id;
+		/* Is the PD provided option in the set of input specs? */
+		s = NULL;
+		for (l = user_specs; l; l = l->next) {
+			spec_text = l->data;
+			if (strncmp(spec_text, pd_key, strlen(pd_key)) != 0)
+				continue;
+			spec_text += strlen(pd_key);
+			if (!*spec_text) {
+				/* Found 'key' up to end of text. */
+				s = spec_text;
+				break;
+			}
+			if (*spec_text == '=') {
+				/* Found 'key=...', position to RHS value. */
+				s = ++spec_text;
+				break;
+			}
+		}
+		if (!s)
+			continue;
+		/*
+		 * Normalize the input text for the user specified value.
+		 * A key without an explicit value is useful for booleans.
+		 */
+		if (!*s)
+			s = "";
+		/*
+		 * Convert the text to the PD default value's data type.
+		 * Store the resulting variable in the hash which gets
+		 * passed to the input module.
+		 */
+		pd_def = pd_opts[idx]->def;
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_UINT32)) {
+			gvar = g_variant_new_uint32(strtoul(s, NULL, 10));
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_INT32)) {
+			gvar = g_variant_new_int32(strtol(s, NULL, 10));
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_UINT64)) {
+			gvar = g_variant_new_uint64(strtoull(s, NULL, 10));
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_DOUBLE)) {
+			gvar = g_variant_new_double(strtod(s, NULL));
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_STRING)) {
+			gvar = g_variant_new_string(s);
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		if (g_variant_is_of_type(pd_def, G_VARIANT_TYPE_BOOLEAN)) {
+			gboolean b;
+			if (strcmp(s, "false") == 0 || strcmp(s, "no") == 0) {
+				b = FALSE;
+			} else if (strcmp(s, "true") == 0 || strcmp(s, "yes") == 0) {
+				b = TRUE;
+			} else {
+				ERR("Cannot convert '%s' to boolean", s);
+				return NULL;
+			}
+			gvar = g_variant_new_boolean(b);
+			g_hash_table_insert(set_opts, g_strdup(pd_key),
+				g_variant_ref_sink(gvar));
+			continue;
+		}
+		ERR("Unsupported data type for option '%s'", pd_key);
+		return NULL;
+	}
+
+	return set_opts;
+}
+
+static int run_testcase(struct input *inp, GSList *pdlist, struct output *op)
 {
 	struct srd_session *sess;
 	struct srd_decoder *dec;
@@ -417,10 +525,14 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 	GVariant *gvar;
 	GHashTable *channels, *opts;
 	GSList *pdl, *l, *l2, *devices;
-	int idx, i;
+	int ret, idx, i;
 	int max_channel;
 	char **decoder_class;
 	struct sr_session *sr_sess;
+	const struct sr_input *in;
+	const struct sr_input_module *imod;
+	const struct sr_option **options;
+	GHashTable *mod_opts;
 	gboolean is_number;
 	const char *s;
 	GArray *initial_pins;
@@ -434,9 +546,73 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		}
 	}
 
-	if (sr_session_load(ctx, infile, &sr_sess) != SR_OK){
-		ERR("sr_session_load() failed");
+	/* Tell "session files" (.sr format) from other input modules. */
+	sr_sess = NULL;
+	in = NULL;
+	if (inp->format && strcmp(inp->format, "match") == 0) {
+		/* Automatic format detection. */
+		if (inp->opt_list) {
+			ERR("Automatic file format won't take options");
+			return FALSE;
+		}
+		ret = sr_input_scan_file(inp->filename, &in);
+		if (ret != SR_OK || !in) {
+			ERR("Cannot open input file (format match)");
+			return FALSE;
+		}
+		sr_session_new(ctx, &sr_sess);
+		ret = SR_OK;
+	} else if (inp->format) {
+		/* Caller specified format, potentially with options. */
+		imod = sr_input_find(inp->format);
+		if (!imod) {
+			ERR("Cannot find specified input module");
+			return FALSE;
+		}
+		mod_opts = NULL;
+		options = sr_input_options_get(imod);
+		if (!options && inp->opt_list) {
+			ERR("Input module does not support options");
+			return FALSE;
+		}
+		if (inp->opt_list) {
+			mod_opts = parse_input_options(options, inp->opt_list);
+			if (!mod_opts) {
+				ERR("Cannot process input module options");
+				return FALSE;
+			}
+		}
+		sr_input_options_free(options);
+		in = sr_input_new(imod, mod_opts);
+		if (!in) {
+			ERR("Cannot create input module instance");
+			return FALSE;
+		}
+		if (mod_opts)
+			g_hash_table_destroy(mod_opts);
+		sr_session_new(ctx, &sr_sess);
+		ret = SR_OK;
+	} else {
+		/* No caller's format spec, assume .sr session file. */
+		ret = sr_session_load(ctx, inp->filename, &sr_sess);
+		if (ret != SR_OK || !sr_sess) {
+			ERR("Cannot open session file");
+			return FALSE;
+		}
+	}
+	if (ret != SR_OK || !sr_sess) {
+		ERR("Failed to open input file");
 		return FALSE;
+	}
+	if (in) {
+		/* Check file access early for non-session files. */
+		int fd;
+		fd = open(inp->filename, O_RDONLY);
+		if (fd < 0) {
+			ERR("Cannot access input file (input module)");
+			return FALSE;
+		}
+		close(fd);
 	}
 
 	sr_session_dev_list(sr_sess, &devices);
@@ -606,9 +782,66 @@ static int run_testcase(const char *infile, GSList *pdlist, struct output *op)
 		DBG("Class %s index is %d", op->class_, op->class_idx);
 	}
 
-	sr_session_start(sr_sess);
-	sr_session_run(sr_sess);
-	sr_session_stop(sr_sess);
+	/*
+	 * Run a convenience sequence for session files. Run a custom
+	 * read loop for non-native file formats (import modules).
+	 *
+	 * TODO Ideally the libsigrok library would provide transparent
+	 * access to either kind of file. Either wrap an input module
+	 * similar to "session files", or turn the currently "special"
+	 * session file into a regular input module. It's unfortunate
+	 * that multiple applications need to re-invent this logic.
+	 */
+	if (!in) {
+		sr_session_start(sr_sess);
+		sr_session_run(sr_sess);
+		sr_session_stop(sr_sess);
+	} else if (in) {
+		int fd;
+		GString *buf;
+		gboolean got_sdi;
+		struct sr_dev_inst *sdi;
+		ssize_t len;
+
+		fd = open(inp->filename, O_RDONLY);
+		if (fd < 0) {
+			ERR("Cannot open input file (read loop)");
+			return FALSE;
+		}
+		buf = g_string_sized_new(CHUNK_SIZE);
+		got_sdi = FALSE;
+		while (TRUE) {
+			g_string_truncate(buf, 0);
+			len = read(fd, buf->str, buf->allocated_len);
+			if (len < 0) {
+				ERR("Cannot read from input file (read loop)");
+				return FALSE;
+			}
+			if (len == 0)
+				break;
+			buf->len = len;
+			ret = sr_input_send(in, buf);
+			if (ret != SR_OK) {
+				ERR("Cannot process input file content");
+				break;
+			}
+
+			sdi = sr_input_dev_inst_get(in);
+			if (!got_sdi && sdi) {
+				/* First time we got a valid sdi. */
+				if (sr_session_dev_add(sr_sess, sdi) != SR_OK) {
+					ERR("Cannot use device after sdi creation");
+					break;
+				}
+				got_sdi = TRUE;
+			}
+		}
+		sr_input_end(in);
+		sr_input_free(in);
+		g_string_free(buf, TRUE);
+		close(fd);
+		sr_session_destroy(sr_sess);
+	}
 
 	srd_session_destroy(sess);
 
@@ -847,10 +1080,17 @@ int main(int argc, char **argv)
 	struct pd *pd;
 	struct channel *channel;
 	struct option *option;
+	struct input *inp;
 	struct output *op;
 	int ret, c;
-	char *opt_infile, **kv, **opstr;
+	char **kv, **opstr;
 	struct initial_pin_info *initial_pin;
+
+	inp = malloc(sizeof(*inp));
+	inp->filename = NULL;
+	inp->format = NULL;
+	inp->opt_list = NULL;
+	inp->opt_hash = NULL;
 
 	op = malloc(sizeof(struct output));
 	op->pd = NULL;
@@ -861,10 +1101,9 @@ int main(int argc, char **argv)
 	op->outfd = 1;
 
 	pdlist = NULL;
-	opt_infile = NULL;
 	pd = NULL;
 	coverage = NULL;
-	while ((c = getopt(argc, argv, "dP:p:o:N:i:O:f:c:S")) != -1) {
+	while ((c = getopt(argc, argv, "dP:p:o:N:i:I:O:f:c:S")) != -1) {
 		switch (c) {
 		case 'd':
 			debug = TRUE;
@@ -912,7 +1151,15 @@ int main(int argc, char **argv)
 			}
 			break;
 		case 'i':
-			opt_infile = optarg;
+			inp->filename = optarg;
+			break;
+		case 'I':
+			/* First arg is the format name, others are options. */
+			if (!inp->format) {
+				inp->format = optarg;
+				break;
+			}
+			inp->opt_list = g_slist_append(inp->opt_list, optarg);
 			break;
 		case 'O':
 			opstr = g_strsplit(optarg, ":", 0);
@@ -959,7 +1206,7 @@ int main(int argc, char **argv)
 		usage(NULL);
 	if (g_slist_length(pdlist) == 0)
 		usage(NULL);
-	if (!opt_infile)
+	if (!inp->filename)
 		usage(NULL);
 	if (!op->pd || op->type == -1)
 		usage(NULL);
@@ -983,7 +1230,7 @@ int main(int argc, char **argv)
 	}
 
 	ret = 0;
-	if (!run_testcase(opt_infile, pdlist, op))
+	if (!run_testcase(inp, pdlist, op))
 		ret = 1;
 
 	if (coverage) {
