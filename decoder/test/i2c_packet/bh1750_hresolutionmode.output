@@ -1,0 +1,4 @@
+1000-1105 i2c_packet: data: "0x23 WR: 01" "23 WR: 01"
+1120-1441 i2c_packet: data: "0x23 WR: 42 [SR] 0x23 WR: 65 [SR] 0x23 WR: 20" "23 WR: 42 [SR] 23 WR: 65 [SR] 23 WR: 20"
+1501-1606 i2c_packet: data: "0x23 WR: 20" "23 WR: 20"
+63800-63953 i2c_packet: data: "0x23 RD: 00 29" "23 RD: 00 29"
