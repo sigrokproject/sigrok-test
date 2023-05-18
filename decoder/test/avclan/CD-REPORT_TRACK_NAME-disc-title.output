@@ -1,0 +1,8 @@
+5203-9000 avclan: address: "AUDIO_HU2"
+9373-13170 avclan: address: "AUDIO_HU1"
+22187-24687 avclan: function: "From Function: CD" "From Function" "From"
+25375-27886 avclan: function: "To Function: CMD_SW" "To Function" "To"
+31709-34241 avclan: disc-number: "CD #1" "CD #"
+34918-37449 avclan: track-number: "Track #0" "Track #"
+44564-94944 avclan: track-title: "Title: A Short EP Or So" "Title"
+28563-31032 avclan: cd-opcode: "Opcode: REPORT_TRACK_NAME" "REPORT_TRACK_NAME" "Opcode"
