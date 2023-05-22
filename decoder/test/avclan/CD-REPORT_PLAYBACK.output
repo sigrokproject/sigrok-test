@@ -4,7 +4,7 @@
 20549-23060 avclan: function: "To Function" "To"
 30112-32634 avclan: cd-state: "State: PLAYBACK" "PLAYBACK" "State"
 33321-35853 avclan: disc-number: "CD #1" "CD #" "CD" "C"
-36529-39051 avclan: track-number: "Track #2" "Track" "Tra" "T"
+36529-39051 avclan: track-number: "Track #2" "Track #" "Tra" "T"
 39738-45457 avclan: playback-time: "Time: 03:15" "03:15" "Time" "T"
 46134-48666 avclan: cd-flags: "Flags: 0" "0" "Flags"
 23737-26227 avclan: cd-opcode: "Opcode: REPORT_PLAYBACK" "REPORT_PLAYBACK" "Opcode"
