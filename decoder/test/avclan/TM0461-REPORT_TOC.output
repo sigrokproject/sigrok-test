@@ -1,0 +1,8 @@
+3560-7229 avclan: address: "CD_CH1"
+7590-11229 avclan: address: "GROUP_AUDIO"
+16815-19243 avclan: function: "From Function: CD_CHANGER" "From Function" "From"
+19901-22336 avclan: function: "To Function" "To"
+26057-28507 avclan: disc-number: "CD #1" "CD #" "CD" "C"
+29157-31607 avclan: track-number: "Track #1" "Track #" "Tra" "T"
+32258-37793 avclan: playback-time: "Total Time: 14:49" "14:49" "Total Time" "T"
+22986-25399 avclan: cd-opcode: "Opcode: REPORT_TOC" "REPORT_TOC" "Opcode"
