@@ -2,6 +2,8 @@
 543274-546848 avclan: address: "BROADCAST"
 552300-554671 avclan: function: "From Function: COMMUNICATION" "From Function" "From"
 555309-557684 avclan: function: "To Function: COMM_CTRL" "To Function" "To"
+558322-560694 avclan: ctrl-opcode: "Opcode: RESTART_LAN" "RESTART_LAN"
+558322-560694 avclan: ctrl-opcode: "Opcode: RESTART_LAN" "RESTART_LAN"
 616165-619738 avclan: address: "AUDIO_HU1"
 620075-623648 avclan: address: "BROADCAST"
 629103-631473 avclan: function: "From Function: COMM_CTRL" "From Function" "From"
