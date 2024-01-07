@@ -1,0 +1,2 @@
+645807-646743 i2c_packet: ('PACKET WRITE', (82, (64, 0)))
+646743-646743 i2c_packet: ('TRANSACTION END', None)

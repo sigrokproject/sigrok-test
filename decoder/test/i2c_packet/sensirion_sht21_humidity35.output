@@ -1,0 +1,7 @@
+1369822-1373475 i2c_packet: data: "0x40 RD: 84" "40 RD: 84"
+7369743-9379221 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 85" "40 WR: 245 [SR] 40 RD: 85"
+15375438-17384971 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 87" "40 WR: 245 [SR] 40 RD: 87"
+23381134-25390665 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 87" "40 WR: 245 [SR] 40 RD: 87"
+31386830-33396359 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 87" "40 WR: 245 [SR] 40 RD: 87"
+39392526-41402011 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 85" "40 WR: 245 [SR] 40 RD: 85"
+47398222-49407708 i2c_packet: data: "0x40 WR: 245 [SR] 0x40 RD: 85" "40 WR: 245 [SR] 40 RD: 85"
