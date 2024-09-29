@@ -59,7 +59,8 @@ SR_PKG_CHECK_SUMMARY([st_pkglibs_summary])
 # first, since usually only that variant will add "-lpython3.8".
 # https://docs.python.org/3/whatsnew/3.8.html#debug-build-uses-the-same-abi-as-release-build
 SR_PKG_CHECK([python3], [ST_PKGLIBS],
-	[python-3.8-embed], [python3-embed],
+	[python-3.12-embed], [python-3.11-embed], [python-3.10-embed],
+	[python-3.9-embed], [python-3.8-embed], [python3-embed],
 	[python-3.8 >= 3.8], [python-3.7 >= 3.7], [python-3.6 >= 3.6],
 	[python-3.5 >= 3.5], [python-3.4 >= 3.4], [python-3.3 >= 3.3],
 	[python-3.2 >= 3.2], [python3 >= 3.2])
