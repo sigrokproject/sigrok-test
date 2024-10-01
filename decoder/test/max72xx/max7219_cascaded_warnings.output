@@ -1,0 +1,6 @@
+221086-222200 max72xx: warning: "Not enough bits sent for current number of chips"
+422226-424068 max72xx: warning: "Too many bits sent for current number of chips"
+624117-624477 max72xx: warning: "Unknown register 0E"
+624482-624856 max72xx: warning: "Unknown register 0D"
+624860-625220 max72xx: warning: "Unknown register 0E"
+625225-625587 max72xx: warning: "Unknown register 0D"

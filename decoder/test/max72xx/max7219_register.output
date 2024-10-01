@@ -1,0 +1,7 @@
+9849-10920 max72xx: register: "Decode: 0b11111111"
+11375-12447 max72xx: register: "Intensity: 4"
+12888-13961 max72xx: register: "Scan limit: 8"
+19845-20917 max72xx: register: "Shutdown: off"
+21295-22367 max72xx: register: "Display test: on"
+436071-437143 max72xx: register: "Intensity: 6"
+2640525-2641597 max72xx: register: "Display test: off"
