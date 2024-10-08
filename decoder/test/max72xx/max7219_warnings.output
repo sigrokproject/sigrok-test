@@ -1,0 +1,3 @@
+233663-234716 max72xx: warning: "Not enough bits sent for current number of chips"
+435503-437646 max72xx: warning: "Too many bits sent for current number of chips"
+637944-639016 max72xx: warning: "Unknown register 0D"
