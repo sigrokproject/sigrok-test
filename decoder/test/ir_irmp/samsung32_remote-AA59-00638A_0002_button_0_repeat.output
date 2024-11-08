@@ -1,0 +1,8 @@
+790650-867700 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: -" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: -" "P: 10 A: 0x707 C: 0xee11 F: -" "C:ee11 A:707 -" "C:ee11"
+899200-976150 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1007700-1084650 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1116200-1193150 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1224650-1301650 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1333150-1410150 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1441650-1518600 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"
+1550150-1627100 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xee11, Flags: repeat" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xee11, Flg: rep" "P: 10 A: 0x707 C: 0xee11 F: rep" "C:ee11 A:707 r" "C:ee11"

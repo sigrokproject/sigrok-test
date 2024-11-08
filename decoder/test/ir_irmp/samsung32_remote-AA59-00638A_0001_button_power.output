@@ -1,0 +1,1 @@
+3828450-3905450 ir_irmp: packet: "Protocol: SAMSG32 (10), Address 0x0707, Command: 0xfd02, Flags: -" "P: SAMSG32 (10), Addr: 0x707, Cmd: 0xfd02, Flg: -" "P: 10 A: 0x707 C: 0xfd02 F: -" "C:fd02 A:707 -" "C:fd02"
