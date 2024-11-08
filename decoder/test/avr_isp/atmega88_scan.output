@@ -3,7 +3,7 @@
 6460715-6462063 avr_isp: rsb0: "Vendor code: 0x1e (Atmel)"
 6476216-6477565 avr_isp: rsb1: "Part family / memory size: 0x93"
 6492733-6494082 avr_isp: rsb2: "Part number: 0x0a"
-6476216-6494082 avr_isp: dev: "Device: Atmel ATmega88"
+6476216-6494082 avr_isp: dev: "Device: Atmel ATmega88(A)"
 6508746-6510095 avr_isp: rfb: "Read fuse bits: 0xff"
 6524078-6525427 avr_isp: rfb: "Read fuse bits: 0xff"
 6540762-6542111 avr_isp: rfb: "Read fuse bits: 0xff"
